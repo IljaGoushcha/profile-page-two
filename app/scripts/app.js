@@ -14,5 +14,10 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'swipe'
   ]);
+
+  // .config(['$anchorScrollProvider', function($anchorScrollProvider) {
+  // 	$anchorScrollProvider.disableAutoScrolling();
+  // }])

@@ -12,6 +12,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  .block-viewer {
+    border: 1px solid blue;
+    height: 100px;
+    overflow: hidden;
+  }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
