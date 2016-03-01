@@ -17,7 +17,3 @@ angular
     'ngTouch',
     'swipe'
   ]);
-
-  // .config(['$anchorScrollProvider', function($anchorScrollProvider) {
-  // 	$anchorScrollProvider.disableAutoScrolling();
-  // }])
