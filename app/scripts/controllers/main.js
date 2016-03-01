@@ -9,9 +9,13 @@
  */
 angular.module('profilePageTwoApp')
   .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    
+  	var vm = this;
+
+  	vm.onLoad = function() {
+  		console.log('inside onLoad() from MainCtrl');
+  	};
+
+  	vm.onLoad();
+
   });
