@@ -8,7 +8,7 @@
  * Controller of the profilePageTwoApp
  */
 angular.module('profilePageTwoApp')
-  .controller('MainCtrl', ['$window', function($window) {
+  .controller('MainCtrl', [function() {
     
   	var vm = this;
 
@@ -26,10 +26,6 @@ angular.module('profilePageTwoApp')
   	// 	console.log(direction);
   	// 	// event.preventDefault();
   	// });
-
-    vm.swipeUpAction = function(event) {
-      console.log('swipe up detected');
-    };
 
   	vm.onLoad = function() {
   		console.log('inside onLoad() from MainCtrl');
