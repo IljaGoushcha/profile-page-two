@@ -1,9 +1,15 @@
+<div ng-controller="BlockTwoCtrl as blockTwoCtrl">
 <ak-panel-group full-window="true" height-width-setter>
 
-  <ak-panel>Block 1</ak-panel>
-  <ak-panel>Block 2</ak-panel>
+  <ak-panel>
+  	<div ng-include="'views/section-one.html'"></div>
+  </ak-panel>
+  <ak-panel on-enter="blockTwoCtrl.enterFn()">
+  	<div>Block 2</div>
+  </ak-panel>
   <ak-panel>Block 3</ak-panel>
   <ak-panel>Block 4</ak-panel>
   <ak-panel>Block 5</ak-panel>
 
 </ak-panel-group>
+</div>
