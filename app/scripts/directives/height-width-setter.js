@@ -13,7 +13,7 @@ angular
 
   			var setStyles = function() {
   				el.style.display = 'block';
-  				el.style.border = '1px solid blue';
+  				// el.style.border = '1px solid blue';
   				el.style.height = getBrowserDimensions().height + 'px';
   				el.style.width = getBrowserDimensions().width + 'px';
   			};
@@ -27,6 +27,10 @@ angular
   					'width': browserWidth
   				};
   			};
+
+        angular.element($window).bind('resize', function() {
+          setStyles();
+        });
 
   			var onLoad = function() {
   				setStyles();

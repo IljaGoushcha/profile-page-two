@@ -15,5 +15,5 @@ angular
     'ngResource',
     'ngSanitize',
     'ngTouch',
-    'snapscroll'
+    'akreitals.panel-snap'
   ]);
