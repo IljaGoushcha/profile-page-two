@@ -35,16 +35,21 @@ angular
         //   console.log("moveDown");
         // };
 
-  			
+        // angular.element($window).bind('mousewheel', function(event) {
+        //   console.log(ctr);
+        //   ctr++;
+        //   angular.element($window).unbind('mousewheel');
 
-        var mousewheel = function(event) {
-          event.preventDefault();
-          console.log(ctr);
-          ctr++;
-          angular.element($window).unbind('mousewheel', mousewheel);
-        };
+        //   console.log(elem);
+        //   var direction = 0;
+        //   if (event.originalEvent.wheelDelta > 0) {
+        //     direction = 1;
+        //   } else {
+        //     direction = -1;
+        //   }
+        //   console.log(direction);
 
-        angular.element($window).bind('mousewheel', mousewheel);
+        // });
 
   			var onLoad = function() {
   				setStyles();
