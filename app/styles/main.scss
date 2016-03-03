@@ -14,15 +14,35 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
-  .block-viewer {
+  
+  .navigation-div {
     border: 1px solid blue;
-    overflow: hidden;
-    height: 100%;
-    width: 100%;
+    position: fixed;
+    z-index: 10;
   }
-  .ak-panel {
-    
+
+  ak-panel-group-menu {
+    ul {
+      padding-left: 150px;
+      li {
+        display: inline;
+      }
+    }
+  }
+
+  ak-panel-group {
+    .ak-panel {
+      border: 1px solid red;
+    }
+  }
+
+  .main-outer-div {
     border: 1px solid red;
+    /*position: absolute;*/
+  
+    
+    
+
   }
 }
 
