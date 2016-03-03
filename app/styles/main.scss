@@ -19,13 +19,12 @@ body {
     border: 1px solid blue;
     position: fixed;
     z-index: 10;
-  }
-
-  ak-panel-group-menu {
-    ul {
-      padding-left: 150px;
-      li {
-        display: inline;
+    ak-panel-group-menu {
+      ul {
+        padding-left: 150px;
+        li {
+          display: inline;
+        }
       }
     }
   }
