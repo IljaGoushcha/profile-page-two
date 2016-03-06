@@ -46,6 +46,42 @@
         }
       }
     }
+
+    .spacer {
+      width: 100px;
+      height: 50px;
+      border: 1px solid red;
+    }
+
+    ak-panel-group-menu-b {
+      ul {
+        list-style-type: none;
+        li {
+          line-height: 10px;
+          margin-bottom: 15px;
+          a {
+            display: inline-block;
+            width: 30px;
+            text-decoration: none;
+            .bullet {
+              display: block;
+              float: left;
+            }
+            .line {
+              display: block;
+              margin-left: 15px;
+            }
+          }
+          a:active {
+            text-decoration: none;
+          }
+        }
+        li.active {
+          line-height: 10px;
+        }
+      }
+    }
+
   }
 
   ak-panel-group {
