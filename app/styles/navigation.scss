@@ -1,0 +1,55 @@
+.navigation-div {
+    border: 1px solid blue;
+    position: fixed;
+    z-index: 10;
+    ak-panel-group-menu {
+      ul {
+        margin: 10px 0 0 0;
+        padding: 0;
+        text-align: center;
+        li {
+          display: inline-block;
+          margin: 0 20px 0 20px;
+          a {
+            font-size: 8px;
+            font-weight: 500;
+            color: black;
+            text-decoration: none;
+          }
+          a:hover {
+            cursor: pointer;
+          }
+          a:active {
+            text-decoration: none;
+          }
+        }
+        li.active {
+          a {
+            color: #5BB1BD;
+            text-decoration: none;
+          }
+        }
+        li:nth-of-type(1) {
+          margin: 0 40px 0 0;
+          a {
+            display: inline-block;
+            width: 87px;
+            height: 30px;
+            font-size: 16px;
+            line-height: 16px;
+            text-align: left;
+            color: #5BB1BD;
+          }
+        }
+        li:nth-of-type(6) {
+          margin: 0 0 0 20px;
+        }
+      }
+    }
+  }
+
+  ak-panel-group {
+    .ak-panel {
+      border: 1px solid red;
+    }
+  }
