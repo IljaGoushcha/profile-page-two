@@ -3,19 +3,20 @@
 	<ak-panel-group-menu for="myPanelGroup"></ak-panel-group-menu>
   <navigation-spacer></navigation-spacer>
 	<ak-panel-group-menu-b for="myPanelGroup"></ak-panel-group-menu-b>
+  <div class="page-number"><div><ak-panel-group-menu-c for="myPanelGroup"></ak-panel-group-menu-c></div></div>
 </div>
 
 <ak-panel-group name="myPanelGroup" full-window="true" keyboard="true" height-width-setter>
-	<ak-panel name="ILJA GOUSHCHA">
+	<ak-panel name="ILJA GOUSHCHA" on-enter="mainCtrl.onEnterSectionOne()">
 		<div ng-include="'views/landing.html'"></div>
   </ak-panel>
-  <ak-panel name="SKILLS">
+  <ak-panel name="SKILLS" on-enter="mainCtrl.onEnterSectionTwo()">
   	<div>Skills</div>
   </ak-panel>
-  <ak-panel name="EXPERIECE">Block 3</ak-panel>
-  <ak-panel name="PROJECTS">Block 4</ak-panel>
-  <ak-panel name="ABOUT">Block 5</ak-panel>
-  <ak-panel name="CONTACT">Block 6</ak-panel>
+  <ak-panel name="EXPERIECE" on-enter="mainCtrl.onEnterSectionThree()">Block 3</ak-panel>
+  <ak-panel name="PROJECTS" on-enter="mainCtrl.onEnterSectionFour()">Block 4</ak-panel>
+  <ak-panel name="ABOUT" on-enter="mainCtrl.onEnterSectionFive()">Block 5</ak-panel>
+  <ak-panel name="CONTACT" on-enter="mainCtrl.onEnterSectionSix()">Block 6</ak-panel>
 </ak-panel-group>
 
 
