@@ -8,7 +8,7 @@
  * Controller of the profilePageTwoApp
  */
 angular.module('profilePageTwoApp')
-  .controller('MainCtrl', ['$window', function($window) {
+  .controller('MainCtrl', [function() {
     
   	var vm = this;
 

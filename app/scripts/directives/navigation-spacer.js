@@ -9,18 +9,19 @@ angular
   			
         var el = elem[0];
         var browserHeight = 0;
-        var browserWidth = 0;
+        var spacerHeight = 0;
+        var offset = 220;
 
   			var setStyles = function() {
   				el.style.display = 'block';
-  				el.style.border = '1px solid blue';
-  				el.style.height = getBrowserDimensions().height + 'px';
+  				// el.style.border = '1px solid red';
+          spacerHeight = parseInt((getBrowserDimensions().height - offset)/2);
+  				el.style.height = spacerHeight + 'px';
           el.style.width = '100%';
   			};
 
   			var getBrowserDimensions = function() {
   				browserHeight = $window.innerHeight;
-  				
   				return {
   					'height': browserHeight
   				};
