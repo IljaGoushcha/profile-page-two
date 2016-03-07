@@ -11,10 +11,14 @@
 		width: 50%;
 		height: 100%;
 		background-color: #303030;
-		.top-block {
-			height: 70px;
-			width: 100%;
-			background-color: #D7D9D8;
+		.sub-block {
+			border: 1px solid yellow;
+			width: 300px;
+			.top-block {
+				height: 70px;
+				width: 100%;
+				background-color: #D7D9D8;
+			}
 		}
 	}
 }

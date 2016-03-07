@@ -2,7 +2,7 @@
   border: 1px solid blue;
   position: fixed;
   z-index: 10;
-  min-height: 300px;
+  min-height: 400px;
   ak-panel-group-menu {
     ul {
       margin: 10px 0 0 0;
@@ -52,6 +52,7 @@
     ul {
       list-style-type: none;
       padding-left: 25px;
+      width: 60px;
       li {
         line-height: 10px;
         margin-bottom: 15px;
