@@ -104,3 +104,19 @@ ak-panel-group {
     border: 1px solid red;
   }
 }
+
+@media (min-width: 1000px) {
+
+  .navigation-div {
+    ak-panel-group-menu {
+      ul {
+        li {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+}
