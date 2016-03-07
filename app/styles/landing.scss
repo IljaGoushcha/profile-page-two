@@ -43,3 +43,16 @@
 		width: 45%;
 	}
 }
+
+@media (max-width: 700px) {
+
+  .landing-outer-div {
+    
+  	img {
+		width: 400px;
+		left: -20px;
+	}
+
+  }
+
+}
