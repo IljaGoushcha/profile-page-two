@@ -19,7 +19,9 @@ angular
           adjustedHeight = (getBrowserDimensions().height - offset);
           if (adjustedHeight >= minHeight) {
             el.style.height = adjustedHeight + 'px';
-          } 
+          } else {
+            el.style.height = minHeight + 'px';
+          }
   			};
 
   			var getBrowserDimensions = function() {
