@@ -38,7 +38,26 @@
 				margin: 15px 0 0 0;
 				color: #5BB1BD;
 				font-size: 20px;
-			} 
+			}
+			.download-resume {
+				border: 1px solid #5BB1BD;
+				border-radius: 2px;
+				color: #5BB1BD;
+				background-color: #303030;
+				padding: 0;
+				margin-top: 20px;
+				font-size: 8px;
+				font-weight: 500;
+				line-height: 17px;
+				width: 125px;
+				height: 20px;
+			}
+			.download-resume:focus {
+				outline: none;
+			}
+			.download-resume:hover {
+				cursor: pointer;
+			}
 		}
 		.spacer-block {
 			background-color: #D7D9D8;

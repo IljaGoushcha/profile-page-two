@@ -13,7 +13,9 @@
   <ak-panel name="SKILLS" on-enter="mainCtrl.onEnterSectionTwo()">
   	<div>Skills</div>
   </ak-panel>
-  <ak-panel name="EXPERIECE" on-enter="mainCtrl.onEnterSectionThree()">Block 3</ak-panel>
+  <ak-panel name="EXPERIECE" on-enter="mainCtrl.onEnterSectionThree()">
+    <div ng-include="'views/experience.html'"></div>
+  </ak-panel>
   <ak-panel name="PROJECTS" on-enter="mainCtrl.onEnterSectionFour()">Block 4</ak-panel>
   <ak-panel name="ABOUT" on-enter="mainCtrl.onEnterSectionFive()">Block 5</ak-panel>
   <ak-panel name="CONTACT" on-enter="mainCtrl.onEnterSectionSix()">Block 6</ak-panel>
