@@ -8,45 +8,59 @@
  * Controller of the profilePageTwoApp
  */
 angular.module('profilePageTwoApp')
-  .controller('MainCtrl', [function() {
+  .controller('MainCtrl', ['$scope', '$window', 'experienceDataServices', function($scope, $window, experienceDataServices) {
     
   	var vm = this;
 
-    vm.pageNumber = '/01';
+    vm.tallClass = false;
+    vm.showEmploymentDescriptionClass = false;
+
+    vm.myExperience = experienceDataServices.getMyExperience();
 
     vm.onEnterSectionOne = function() {
       console.log('onEnterSectionOne');
-      vm.pageNumber = '/01';
     };
 
     vm.onEnterSectionTwo = function() {
       console.log('onEnterSectionTwo');
-      vm.pageNumber = '/02';
     };
 
     vm.onEnterSectionThree = function() {
       console.log('onEnterSectionThree');
-      vm.pageNumber = '/03';
+      vm.tallClass = true;
+      setTimeout(function(){
+        vm.showEmploymentDescriptionClass = true;
+        $scope.$apply();
+      }, 1000);
     };
 
     vm.onEnterSectionFour = function() {
       console.log('onEnterSectionFour');
-      vm.pageNumber = '/04';
     };
 
     vm.onEnterSectionFive = function() {
       console.log('onEnterSectionFive');
-      vm.pageNumber = '/05';
     };
 
     vm.onEnterSectionSix = function() {
       console.log('onEnterSectionSix');
-      vm.pageNumber = '/06';
+    };
+
+    vm.downloadResumeAction = function() {
+      console.log('download resume');
     };
 
   	vm.onLoad = function() {
   		console.log('inside onLoad() from MainCtrl');
   	};
+
+    vm.githubAction = function() {
+      $window.open('https://github.com/IljaGoushcha');
+    }
+
+    vm.linkedinAction = function() {
+      $window.open('https://www.linkedin.com/in/iljagoushcha');
+    }
 
   	vm.onLoad();
 

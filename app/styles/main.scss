@@ -3,8 +3,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@import "landing";
+@import "introduction";
 @import "navigation";
+@import "experience";
+@import "projects";
 
 .browsehappy {
   margin: 0.2em 0;
@@ -19,12 +21,7 @@ body {
   font-family: 'Roboto', sans-serif;
   
   .main-outer-div {
-    border: 1px solid red;
-    /*position: absolute;*/
-  
-    
-    
-
+    /*border: 1px solid red;*/
   }
 }
 

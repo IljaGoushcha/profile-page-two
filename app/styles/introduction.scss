@@ -1,0 +1,131 @@
+.introduction-outer-div {
+	min-width: 700px;
+
+	.left-block {
+		float: left;
+		width: 50%;
+		height: 100%;
+		background-color: #D7D9D8;
+	}
+	.right-block {
+		float: right;
+		width: 50%;
+		height: 100%;
+		background-color: #303030;
+		.sub-block {
+			border-right: 1px solid #5BB1BD;
+			border-bottom: 1px solid #5BB1BD;
+			position: relative;
+			float:left;
+			width: 75%;
+			padding: 120px 0 0 40px;
+			.blue-block {
+				position: absolute;
+				top: 126px;
+				left: -17px;
+				width: 60px;
+				height: 29px;
+				background-color: #5BB1BD;
+			}
+			h1 {
+				font-size: 40px;
+				color: #D7D9D8;
+				font-weight: 700;
+				margin: 0;
+				line-height: 40px;
+			}
+			.my-title {
+				margin: 15px 0 0 0;
+				color: #5BB1BD;
+				font-size: 20px;
+			}
+			.download-resume {
+				border: 1px solid #5BB1BD;
+				border-radius: 2px;
+				color: #5BB1BD;
+				background-color: #303030;
+				padding: 0;
+				margin-top: 20px;
+				font-size: 8px;
+				font-weight: 500;
+				line-height: 17px;
+				width: 125px;
+				height: 20px;
+			}
+			.download-resume:focus {
+				outline: none;
+			}
+			.download-resume:hover {
+				cursor: pointer;
+				color: #D7D9D8;
+				border: 1px solid #D7D9D8;
+			}
+			.github-icon {
+				width: 20px;
+				height: 20px;
+				background-image: url("../images/github-icon.png");
+				background-size: 15px;
+				background-position: center;
+				background-repeat: no-repeat;
+				position: absolute;
+				bottom: 50px;
+				left: 60px;
+			}
+			.github-icon:hover {
+				background-image: url("../images/github-icon-hover.png");
+				cursor: pointer;
+			}
+			.linkedin-icon {
+				width: 20px;
+				height: 20px;
+				background-image: url("../images/linkedin-icon.png");
+				background-size: 15px;
+				background-position: center;
+				background-repeat: no-repeat;
+				position: absolute;
+				bottom: 50px;
+				left: 120px;
+			}
+			.linkedin-icon:hover {
+				background-image: url("../images/linkedin-icon-hover.png");
+				cursor: pointer;
+			}
+		}
+		.spacer-block {
+			background-color: #D7D9D8;
+			height: 70px;
+		}
+	}
+	
+	.portrait {
+		position: absolute;
+		min-width: 371px;
+		top: 70px;
+		left: 0;
+		width: 53%;
+		background-image: url("../images/portrait.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.introduction-outer-div {
+
+		.right-block {
+			.sub-block {
+				.blue-block {
+					top: 130px;
+					left: -16px;
+					height: 43px;
+				}
+				h1 {
+					font-size: 60px;
+					line-height: 60px;
+				}
+			}
+		}	
+	}
+}
