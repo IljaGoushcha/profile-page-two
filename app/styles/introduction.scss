@@ -64,14 +64,8 @@
 			height: 70px;
 		}
 	}
-	img {
-		position: absolute;
-		bottom: 0;
-		right: 47%;
-		width: 45%;
-	}
+	
 	.portrait {
-		border: 1px solid red;
 		position: absolute;
 		min-width: 371px;
 		top: 70px;
@@ -85,13 +79,6 @@
 
 @media (max-width: 700px) {
 
-  .landing-outer-div {
-    
-  	img {
-		width: 400px;
-		left: -20px;
-	}
-
-  }
+  
 
 }

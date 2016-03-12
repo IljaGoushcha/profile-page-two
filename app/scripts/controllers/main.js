@@ -8,9 +8,11 @@
  * Controller of the profilePageTwoApp
  */
 angular.module('profilePageTwoApp')
-  .controller('MainCtrl', [function() {
+  .controller('MainCtrl', ['experienceDataServices', function(experienceDataServices) {
     
   	var vm = this;
+
+    vm.myExperience = experienceDataServices.getMyExperience();
 
     vm.onEnterSectionOne = function() {
       console.log('onEnterSectionOne');
