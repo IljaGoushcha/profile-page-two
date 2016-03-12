@@ -36,7 +36,6 @@ angular.module('profilePageTwoApp')
 
     vm.onEnterSectionFour = function() {
       console.log('onEnterSectionFour');
-      vm.tallClass = true;
     };
 
     vm.onEnterSectionFive = function() {
