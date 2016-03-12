@@ -1,7 +1,8 @@
-'use strict'
+'use strict';
 
 angular.module('profilePageTwoApp').factory('experienceDataServices', function() {
 	var myExperience = [{
+		'id': 0,
 		'companyName': 'Altisource',
 		'companyLocation': 'Boston, MA',
 		'position': 'Software Engineer',
@@ -9,6 +10,7 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'endDate': 'present'
 	},
 	{
+		'id': 1,
 		'companyName': 'Rahmani Group',
 		'companyLocation': 'Boston, MA',
 		'position': 'Freelance Web Developer',
@@ -16,6 +18,7 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'endDate': 'April 2015'
 	},
 	{
+		'id': 2,
 		'companyName': 'NuPortSoft',
 		'companyLocation': 'ALiso Viejo, CA',
 		'position': 'Project Manager',
@@ -23,6 +26,7 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'endDate': 'May 2014'
 	},
 	{
+		'id': 3,
 		'companyName': 'Semicoa Corp',
 		'companyLocation': 'Costa Mesa, CA',
 		'position': 'Test/Product Engineer',
@@ -30,6 +34,7 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'endDate': 'April 2013'
 	},
 	{
+		'id': 4,
 		'companyName': 'Microsemi Corp',
 		'companyLocation': 'Costa Mesa, CA',
 		'position': 'Test Engineer',
@@ -37,6 +42,7 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'endDate': 'August 2009'
 	},
 	{
+		'id': 5,
 		'companyName': 'Semicoa',
 		'companyLocation': 'Costa Mesa, CA',
 		'position': 'Test/R&D Engineer',

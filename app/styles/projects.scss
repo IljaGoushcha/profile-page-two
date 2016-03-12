@@ -1,0 +1,14 @@
+.projects-outer-div {
+	.test-div {
+		width: 50px;
+		height: 200px;
+		border: 1px solid pink;
+		position: absolute;
+		left: 300px;
+		bottom: 0;
+	}
+	.test-div.tall {
+		transition: 0.5s linear all;
+		height: 400px;
+	}
+}

@@ -8,9 +8,12 @@
  * Controller of the profilePageTwoApp
  */
 angular.module('profilePageTwoApp')
-  .controller('MainCtrl', ['experienceDataServices', function(experienceDataServices) {
+  .controller('MainCtrl', ['$scope', 'experienceDataServices', function($scope, experienceDataServices) {
     
   	var vm = this;
+
+    vm.tallClass = false;
+    vm.showEmploymentDescriptionClass = false;
 
     vm.myExperience = experienceDataServices.getMyExperience();
 
@@ -24,10 +27,16 @@ angular.module('profilePageTwoApp')
 
     vm.onEnterSectionThree = function() {
       console.log('onEnterSectionThree');
+      vm.tallClass = true;
+      setTimeout(function(){
+        vm.showEmploymentDescriptionClass = true;
+        $scope.$apply();
+      }, 1000);
     };
 
     vm.onEnterSectionFour = function() {
       console.log('onEnterSectionFour');
+      vm.tallClass = true;
     };
 
     vm.onEnterSectionFive = function() {

@@ -8,7 +8,7 @@
     		<div class="col-xs-3"></div>
 		</div>
 
-	 	<div class="row" height-setter offset="175" min-height="225">
+	 	<!-- <div class="row" height-setter offset="175" min-height="225">
 			
 			<div class="col-sm-2" ng-repeat="experience in mainCtrl.myExperience">
 				<div class="column-div">
@@ -29,6 +29,31 @@
 				
 			</div>
 			
+		</div> -->
+
+		<div class="bars-main-div" height-setter offset="175" min-height="225">
+
+			<div class="bars-centered-div">
+
+				<div class="experience-bar" ng-repeat="experience in mainCtrl.myExperience" ng-class="{'tall': mainCtrl.tallClass == true}">
+
+					<div class="employment-period-div">
+						<span>{{experience.startDate}}</span><br>
+						<img src="../images/chevron-down.png" alt="chevron down"><br>
+						<span>{{experience.endDate}}</span>
+					</div>
+
+					<div class="employment-description-div rotate-align-bottom" ng-class="{'showEmploymentDescription': mainCtrl.showEmploymentDescriptionClass == true}">
+						<div class="company-name">{{experience.companyName}}</div>
+						<div class="company-location">{{experience.companyLocation}}</div>
+						<div class="blue-underline"></div>
+						<div class="position">{{experience.position}}</div>
+					</div>
+
+				</div>
+
+			</div>
+
 		</div>
 
 	</div>
