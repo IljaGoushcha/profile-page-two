@@ -8,7 +8,7 @@
  * Controller of the profilePageTwoApp
  */
 angular.module('profilePageTwoApp')
-  .controller('MainCtrl', ['$scope', 'experienceDataServices', function($scope, experienceDataServices) {
+  .controller('MainCtrl', ['$scope', '$window', 'experienceDataServices', function($scope, $window, experienceDataServices) {
     
   	var vm = this;
 
@@ -54,6 +54,14 @@ angular.module('profilePageTwoApp')
   	vm.onLoad = function() {
   		console.log('inside onLoad() from MainCtrl');
   	};
+
+    vm.githubAction = function() {
+      $window.open('https://github.com/IljaGoushcha');
+    }
+
+    vm.linkedinAction = function() {
+      $window.open('https://www.linkedin.com/in/iljagoushcha');
+    }
 
   	vm.onLoad();
 
