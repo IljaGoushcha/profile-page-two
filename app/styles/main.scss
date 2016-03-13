@@ -27,6 +27,14 @@ body {
   .main-outer-div {
     /*border: 1px solid red;*/
   }
+
+	.first-ng-include {
+  		ak-panel-group {
+  			.ak-panel {
+  				border: 1px solid red;
+  			}
+  		}
+  	}
 }
 
 
