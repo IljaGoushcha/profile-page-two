@@ -60,6 +60,9 @@
 					color: #D7D9D8;
 					border: 1px solid #D7D9D8;
 				}
+				.submit-form-button:focus {
+					outline: none;
+				}
 			}
 		}
 	}
