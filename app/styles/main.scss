@@ -19,13 +19,17 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   padding: 0.2em 0;
 }
 
-body {
-  padding: 0;
+html, body {
   margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
   
   font-family: 'Roboto', sans-serif;
   
-	ak-panel-group {
+	.my-panel-group {
 		.ak-panel {
 			border: 1px solid red;
 		}
