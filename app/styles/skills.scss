@@ -3,21 +3,23 @@
 	padding: 100px 0 0 0;
 	.inner-block {
 		width: 100%;
-		padding: 0 0 0 200px;
+		padding: 0 0 0 170px;
 		.right-block {
 			background-color: #535B5B;
-			border: 1px solid red;
+			/*border: 1px solid red;*/
 			height: 100%;
-			padding: 0 0 0 50px;
+			padding: 30px 0 0 50px;
 			h1 {
 				color: #D7D9D8;
 				font-size: 50px;
-				margin-bottom: 50px;
+				margin: 0 0 50px 0;
 			}
 			.technology-group {
 				/*border: 1px solid red;*/
 				height: 150px;
-				width: 350px;
+				width: 277px;
+				display: inline-block;
+				margin: 0 10px 20px 0;
 				.technology-group-name {
 					color: #5BB1BD;
 					font-size: 20px;
@@ -26,16 +28,20 @@
 				}
 				.pie-chart-group {
 					/*border: 1px solid red;*/
-					width: 100px;
+					width: 85px;
 					height: 120px;
 					float: left;
 					margin-right: 10px;
 					position: relative;
+					canvas {
+						width: 84px;
+						height: 84px;
+					}
 					.rating {
 						color: #D7D9D8;
 						position: absolute;
-						bottom: 35px;
-						left: 40px;
+						bottom: 41px;
+						left: 32px;
 						font-weight: 300;
 						-webkit-transform: rotate(-90deg);
 					    -webkit-transform-origin: left top;
@@ -60,10 +66,68 @@
 						font-weight: 300;
 					}
 				}
+				.pie-chart-group:last-of-type {
+					margin: 0;
+				}
+			}
+			.technology-group:last-of-type {
+				margin-right: 0;
 			}
 			
 			
 		}
 		
+	}
+}
+
+@media (min-width: 1000px) {
+
+	.skills-outer-div {
+		.inner-block {
+			.right-block {
+				.technology-group {
+					/*border: 1px solid red;*/
+					margin: 0 60px 30px 0;
+				}
+			}	
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.skills-outer-div {
+		.inner-block {
+			.right-block {
+				.technology-group {
+					/*border: 1px solid red;*/
+					width: 323px;
+					margin: 0 60px 30px 0;
+					.pie-chart-group {
+						/*border: 1px solid red;*/
+						width: 100px;
+						canvas {
+							width: 99px;
+							height: 99px;
+						}
+						.rating {
+							bottom: 35px;
+							left: 40px;
+						}
+						.technology-name {
+							position: absolute;
+							bottom: 0;
+							width: 100%;
+							text-align: center;
+							color: #D7D9D8;
+							font-weight: 300;
+						}
+					}
+					.pie-chart-group:last-of-type {
+						margin: 0;
+					}
+				}
+			}	
+		}
 	}
 }
