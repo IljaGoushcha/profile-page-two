@@ -9,111 +9,60 @@
 			/*border: 1px solid red;*/
 			height: 100%;
 			padding: 30px 0 0 50px;
-			h1 {
-				color: #D7D9D8;
-				font-size: 50px;
-				margin: 0 0 50px 0;
-			}
-			.technology-group {
+			.container {
 				/*border: 1px solid red;*/
-				height: 150px;
-				width: 277px;
-				display: inline-block;
-				margin: 0 10px 20px 0;
-				.technology-group-name {
-					color: #5BB1BD;
-					font-size: 20px;
-					line-height: 20px;
-					margin-bottom: 10px;
+				margin: 0;
+				padding: 0;
+				width: 600px;
+				height: 100%;
+				h1 {
+					color: #D7D9D8;
+					font-size: 50px;
+					margin: 0 0 30px 0;
 				}
-				.pie-chart-group {
-					/*border: 1px solid red;*/
-					width: 85px;
-					height: 120px;
-					float: left;
-					margin-right: 10px;
-					position: relative;
-					canvas {
-						width: 84px;
-						height: 84px;
-					}
-					.rating {
-						color: #D7D9D8;
-						position: absolute;
-						bottom: 41px;
-						left: 32px;
-						font-weight: 300;
-						-webkit-transform: rotate(-90deg);
-					    -webkit-transform-origin: left top;
-					    -moz-transform: rotate(-90deg);
-					    -moz-transform-origin: left top;
-					    -ms-transform: rotate(-90deg);
-					    -ms-transform-origin: left top;
-					    -o-transform: rotate(-90deg);
-					    -o-transform-origin: left top;
-					    transform: rotate(-90deg);
-					    transform-origin: left top;
-					    span {
-					    	color: #5BB1BD;
-					    }
-					}
-					.technology-name {
-						position: absolute;
-						bottom: 0;
-						width: 100%;
-						text-align: center;
-						color: #D7D9D8;
-						font-weight: 300;
-					}
-				}
-				.pie-chart-group:last-of-type {
-					margin: 0;
-				}
-			}
-			.technology-group:last-of-type {
-				margin-right: 0;
-			}
-			
-			
-		}
-		
-	}
-}
-
-@media (min-width: 1000px) {
-
-	.skills-outer-div {
-		.inner-block {
-			.right-block {
 				.technology-group {
 					/*border: 1px solid red;*/
-					margin: 0 60px 30px 0;
-				}
-			}	
-		}
-	}
-}
-
-@media (min-width: 1200px) {
-
-	.skills-outer-div {
-		.inner-block {
-			.right-block {
-				.technology-group {
-					/*border: 1px solid red;*/
-					width: 323px;
-					margin: 0 60px 30px 0;
+					height: 140px;
+					width: 277px;
+					display: inline-block;
+					margin: 0 35px 35px 0;
 					pointer-events: none;
+					.technology-group-name {
+						color: #5BB1BD;
+						font-size: 20px;
+						line-height: 20px;
+						margin-bottom: 10px;
+					}
 					.pie-chart-group {
 						/*border: 1px solid red;*/
-						width: 100px;
+						width: 85px;
+						height: 110px;
+						float: left;
+						margin-right: 10px;
+						position: relative;
 						canvas {
-							width: 99px;
-							height: 99px;
+							width: 84px;
+							height: 84px;
 						}
 						.rating {
-							bottom: 35px;
-							left: 40px;
+							color: #D7D9D8;
+							position: absolute;
+							bottom: 32px;
+							left: 32px;
+							font-weight: 300;
+							-webkit-transform: rotate(-90deg);
+						    -webkit-transform-origin: left top;
+						    -moz-transform: rotate(-90deg);
+						    -moz-transform-origin: left top;
+						    -ms-transform: rotate(-90deg);
+						    -ms-transform-origin: left top;
+						    -o-transform: rotate(-90deg);
+						    -o-transform-origin: left top;
+						    transform: rotate(-90deg);
+						    transform-origin: left top;
+						    span {
+						    	color: #5BB1BD;
+						    }
 						}
 						.technology-name {
 							position: absolute;
@@ -126,6 +75,48 @@
 					}
 					.pie-chart-group:last-of-type {
 						margin: 0;
+					}
+				}
+				.technology-group:nth-of-type(2) {
+					margin-right: 0;
+				}
+				.technology-group:nth-of-type(4) {
+					margin-right: 0;
+				}
+				.technology-group:nth-of-type(6) {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+
+	.skills-outer-div {
+		.inner-block {
+			.right-block {
+				.container {
+					width: 800px;
+					.technology-group {
+						margin: 0 60px 30px 0;
+					}
+				}
+			}	
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+
+	.skills-outer-div {
+		.inner-block {
+			.right-block {
+				padding: 30px 0 0 150px;
+				.container {
+					width: 900px;
+					.technology-group {
+						margin: 0 60px 30px 0;
 					}
 				}
 			}	
