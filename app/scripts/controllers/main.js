@@ -14,6 +14,7 @@ angular.module('profilePageTwoApp')
 
     vm.tallClass = false;
     vm.showEmploymentDescriptionClass = false;
+    vm.showSkillsClass = false;
 
     vm.myExperience = experienceDataServices.getMyExperience();
 
@@ -30,6 +31,7 @@ angular.module('profilePageTwoApp')
     vm.onEnterSectionTwo = function() {
       console.log('onEnterSectionTwo');
       vm.mySkills = skillsDataServices.getMySkills();
+      vm.showSkillsClass = true;
     };
 
     vm.onEnterSectionThree = function() {
