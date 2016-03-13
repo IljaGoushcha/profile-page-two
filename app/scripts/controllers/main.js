@@ -71,6 +71,12 @@ angular.module('profilePageTwoApp')
       $window.open('https://www.linkedin.com/in/iljagoushcha');
     };
 
+    vm.openExperienceModal = function(myExperience) {
+      console.log('inside openExperienceModal()');
+      angular.element('#experienceModal').modal();
+      vm.selectedExperience = myExperience;
+    };
+
   	vm.onLoad();
 
   }]);

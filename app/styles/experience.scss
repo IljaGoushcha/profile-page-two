@@ -86,6 +86,9 @@
 					    transform-origin: left top;
 					}
 				}
+				.experience-bar:hover {
+					cursor: pointer;
+				}
 				.experience-bar:nth-of-type(1) {
 					left: 0;
 				}
