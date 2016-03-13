@@ -9,9 +9,11 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'startDate': 'June 2015',
 		'endDate': 'present',
 		'description': [
-			"built something something",
-			"assisted with something something",
-			"something else"
+			"Built data visualization platform, intended for marketing behavior analysis (Pointillist App)",
+			"Used AgularJS for frontend, visualization libraries, wrote backend services in Play",
+			"Used WebSockets for realtime data representation",
+			"Involved in data anlysis, database design, and authentication design",
+			"AngularJS, JavaScript, Java, Play Framework, Nginx, WebSocket, Bamboo, MySQL, Grunt, d3, SVG, WSO2, Realtime"
 		]
 	},
 	{
@@ -22,9 +24,9 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'startDate': 'January 2015',
 		'endDate': 'April 2015',
 		'description': [
-			"built something something",
-			"assisted with something something",
-			"something else"
+			"Built corporate website",
+			"Developed software specifications, design, UX/UI, code",
+			"JavaScript, jQuery, Photoshop, HTML5/CSS3, Bootstrap"
 		]
 	},
 	{
@@ -35,9 +37,9 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'startDate': 'May 2013',
 		'endDate': 'May 2014',
 		'description': [
-			"built something something",
-			"assisted with something something",
-			"something else"
+			"Supervised customer engagement, teams augmentation, and projects delivery timeline",
+			"Completed four large scale software development projects, leading international teams of up to 10 people",
+			"Applied Agile methodologies, developed software specifications"
 		]
 	},
 	{
@@ -48,9 +50,10 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'startDate': 'August 2009',
 		'endDate': 'April 2013',
 		'description': [
-			"built something something",
-			"assisted with something something",
-			"something else"
+			"Developed high reliability descrete semiconductor devices for aerospace/defense industry",
+			"Supervised test engineering teams of up to five people",
+			"Quadrupled production output by installing and automating new test equipment",
+			"Put in production close to twenty new semiconductor devices"
 		]
 	},
 	{
