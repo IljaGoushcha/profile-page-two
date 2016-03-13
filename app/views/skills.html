@@ -2,30 +2,17 @@
 
 	<div class="inner-block" height-setter offset="100" min-height="300">
 
-		<div class="right-block" width-setter width-offset="200" min-width="600">
+		<div class="right-block" width-setter width-offset="170" min-width="630">
 
 			<h1>SKILLS</h1>
 
-			<div class="technology-group">
-				<div class="technology-group-name">Languages</div>
-				<div class="pie-chart-group">
-					<canvas tc-chartjs-doughnut chart-data="mainCtrl.myData1" chart-options="mainCtrl.chartOptions" width="99" height="99"></canvas>
-					<div class="rating">5<span>/</span>10</div>
-					<div class="technology-name">Java</div>
+			<div class="technology-group" ng-repeat="technologyGroup in mainCtrl.mySkills">
+				<div class="technology-group-name">{{technologyGroup.technologyGroup}}</div>
+				<div class="pie-chart-group" ng-repeat="skill in technologyGroup.technologies">
+					<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions"></canvas>
+					<div class="rating">{{skill.level}}<span>/</span>10</div>
+					<div class="technology-name">{{skill.name}}</div>
 				</div>
-				
-				<div class="pie-chart-group">
-					<canvas tc-chartjs-doughnut chart-data="mainCtrl.myData2" chart-options="mainCtrl.chartOptions" width="99" height="99"></canvas>
-					<div class="rating">8<span>/</span>10</div>
-					<div class="technology-name">JavaScript</div>
-				</div>
-
-				<div class="pie-chart-group">
-					<canvas tc-chartjs-doughnut chart-data="mainCtrl.myData3" chart-options="mainCtrl.chartOptions" width="99" height="99"></canvas>
-					<div class="rating">6<span>/</span>10</div>
-					<div class="technology-name">Ruby</div>
-				</div>
-
 			</div>
 			
 

@@ -8,7 +8,7 @@
  * Controller of the profilePageTwoApp
  */
 angular.module('profilePageTwoApp')
-  .controller('MainCtrl', ['$scope', '$window', 'experienceDataServices', function($scope, $window, experienceDataServices) {
+  .controller('MainCtrl', ['$scope', '$window', 'experienceDataServices', 'skillsDataServices', function($scope, $window, experienceDataServices, skillsDataServices) {
     
   	var vm = this;
 
@@ -29,22 +29,7 @@ angular.module('profilePageTwoApp')
 
     vm.onEnterSectionTwo = function() {
       console.log('onEnterSectionTwo');
-
-      vm.myData1 = [
-        { value : 5, color : "#5BB1BD" },
-        { value : 5, color : "#3C3A3B" }
-      ];
-
-      vm.myData2 = [
-        { value : 8, color : "#5BB1BD" },
-        { value : 2, color : "#3C3A3B" }
-      ];
-
-      vm.myData3 = [
-        { value : 6, color : "#5BB1BD" },
-        { value : 4, color : "#3C3A3B" }
-      ];
-
+      vm.mySkills = skillsDataServices.getMySkills();
     };
 
     vm.onEnterSectionThree = function() {
