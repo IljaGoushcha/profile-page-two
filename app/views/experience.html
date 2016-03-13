@@ -12,7 +12,7 @@
 
 			<div class="bars-centered-div">
 
-				<div class="experience-bar" ng-repeat="experience in mainCtrl.myExperience" ng-class="{'tall': mainCtrl.tallClass == true}">
+				<div class="experience-bar" ng-repeat="experience in mainCtrl.myExperience" ng-class="{'tall': mainCtrl.tallClass == true}" ng-click="mainCtrl.openExperienceModal(experience)">
 
 					<div class="employment-period-div">
 						<span>{{experience.startDate}}</span><br>
@@ -36,6 +36,7 @@
 	</div>
 	
 
+	<div ng-include="'views/experience-modal.html'"></div>
 	
 
 </div>

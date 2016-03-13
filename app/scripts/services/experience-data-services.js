@@ -7,7 +7,12 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'companyLocation': 'Boston, MA',
 		'position': 'Software Engineer',
 		'startDate': 'June 2015',
-		'endDate': 'present'
+		'endDate': 'present',
+		'description': [
+			"built something something",
+			"assisted with something something",
+			"something else"
+		]
 	},
 	{
 		'id': 1,
@@ -15,7 +20,12 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'companyLocation': 'Boston, MA',
 		'position': 'Freelance Web Developer',
 		'startDate': 'January 2015',
-		'endDate': 'April 2015'
+		'endDate': 'April 2015',
+		'description': [
+			"built something something",
+			"assisted with something something",
+			"something else"
+		]
 	},
 	{
 		'id': 2,
@@ -23,7 +33,12 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'companyLocation': 'ALiso Viejo, CA',
 		'position': 'Project Manager',
 		'startDate': 'May 2013',
-		'endDate': 'May 2014'
+		'endDate': 'May 2014',
+		'description': [
+			"built something something",
+			"assisted with something something",
+			"something else"
+		]
 	},
 	{
 		'id': 3,
@@ -31,7 +46,12 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'companyLocation': 'Costa Mesa, CA',
 		'position': 'Test/Product Engineer',
 		'startDate': 'August 2009',
-		'endDate': 'April 2013'
+		'endDate': 'April 2013',
+		'description': [
+			"built something something",
+			"assisted with something something",
+			"something else"
+		]
 	},
 	{
 		'id': 4,
@@ -39,7 +59,12 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'companyLocation': 'Costa Mesa, CA',
 		'position': 'Test Engineer',
 		'startDate': 'August 2008',
-		'endDate': 'August 2009'
+		'endDate': 'August 2009',
+		'description': [
+			"built something something",
+			"assisted with something something",
+			"something else"
+		]
 	},
 	{
 		'id': 5,
@@ -47,7 +72,12 @@ angular.module('profilePageTwoApp').factory('experienceDataServices', function()
 		'companyLocation': 'Costa Mesa, CA',
 		'position': 'Test/R&D Engineer',
 		'startDate': 'June 2004',
-		'endDate': 'August 2008'
+		'endDate': 'August 2008',
+		'description': [
+			"built something something",
+			"assisted with something something",
+			"something else"
+		]
 	}];
 
 	var getMyExperience = function() {
