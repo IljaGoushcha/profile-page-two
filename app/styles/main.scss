@@ -21,20 +21,16 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   padding: 0;
+  margin: 0;
   
   font-family: 'Roboto', sans-serif;
   
-  .main-outer-div {
-    /*border: 1px solid red;*/
-  }
-
-	.first-ng-include {
-  		ak-panel-group {
-  			.ak-panel {
-  				border: 1px solid red;
-  			}
-  		}
-  	}
+	ak-panel-group {
+		.ak-panel {
+			border: 1px solid red;
+		}
+	}
+  	
 }
 
 
