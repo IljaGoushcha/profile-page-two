@@ -17,13 +17,7 @@ angular.module('profilePageTwoApp')
 
     vm.myExperience = experienceDataServices.getMyExperience();
 
-    vm.chartOptions1 = {
-      segmentShowStroke : false,
-      animateRotate : false,
-      percentageInnerCutout : 90
-    };
-
-    vm.chartOptions2 = {
+    vm.chartOptions = {
       segmentShowStroke : false,
       animateRotate : true,
       percentageInnerCutout : 90
@@ -35,13 +29,22 @@ angular.module('profilePageTwoApp')
 
     vm.onEnterSectionTwo = function() {
       console.log('onEnterSectionTwo');
+
       vm.myData1 = [
-        { value : 10, color : "#3C3A3B" }
-      ];
-      vm.myData2 = [
         { value : 5, color : "#5BB1BD" },
         { value : 5, color : "#3C3A3B" }
       ];
+
+      vm.myData2 = [
+        { value : 8, color : "#5BB1BD" },
+        { value : 2, color : "#3C3A3B" }
+      ];
+
+      vm.myData3 = [
+        { value : 6, color : "#5BB1BD" },
+        { value : 4, color : "#3C3A3B" }
+      ];
+
     };
 
     vm.onEnterSectionThree = function() {

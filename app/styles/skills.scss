@@ -8,39 +8,60 @@
 			background-color: #535B5B;
 			border: 1px solid red;
 			height: 100%;
+			padding: 0 0 0 50px;
 			h1 {
 				color: #D7D9D8;
 				font-size: 50px;
+				margin-bottom: 50px;
 			}
-			.pie-chart-group {
+			.technology-group {
 				/*border: 1px solid red;*/
-				width: 100px;
-				height: 120px;
-				position: relative;
-				.rating {
-					color: #D7D9D8;
-					position: absolute;
-					bottom: 33px;
-					left: 40px;
-					-webkit-transform: rotate(-90deg);
-				    -webkit-transform-origin: left top;
-				    -moz-transform: rotate(-90deg);
-				    -moz-transform-origin: left top;
-				    -ms-transform: rotate(-90deg);
-				    -ms-transform-origin: left top;
-				    -o-transform: rotate(-90deg);
-				    -o-transform-origin: left top;
-				    transform: rotate(-90deg);
-				    transform-origin: left top;
+				height: 150px;
+				width: 350px;
+				.technology-group-name {
+					color: #5BB1BD;
+					font-size: 20px;
+					line-height: 20px;
+					margin-bottom: 10px;
 				}
-				.technology-name {
-					position: absolute;
-					bottom: 0;
-					width: 100%;
-					text-align: center;
-					color: #D7D9D8;
+				.pie-chart-group {
+					/*border: 1px solid red;*/
+					width: 100px;
+					height: 120px;
+					float: left;
+					margin-right: 10px;
+					position: relative;
+					.rating {
+						color: #D7D9D8;
+						position: absolute;
+						bottom: 35px;
+						left: 40px;
+						font-weight: 300;
+						-webkit-transform: rotate(-90deg);
+					    -webkit-transform-origin: left top;
+					    -moz-transform: rotate(-90deg);
+					    -moz-transform-origin: left top;
+					    -ms-transform: rotate(-90deg);
+					    -ms-transform-origin: left top;
+					    -o-transform: rotate(-90deg);
+					    -o-transform-origin: left top;
+					    transform: rotate(-90deg);
+					    transform-origin: left top;
+					    span {
+					    	color: #5BB1BD;
+					    }
+					}
+					.technology-name {
+						position: absolute;
+						bottom: 0;
+						width: 100%;
+						text-align: center;
+						color: #D7D9D8;
+						font-weight: 300;
+					}
 				}
 			}
+			
 			
 		}
 		
