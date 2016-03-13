@@ -28,10 +28,15 @@
 					margin: 0 35px 35px 0;
 					pointer-events: none;
 					.technology-group-name {
+						opacity: 0;
 						color: #5BB1BD;
 						font-size: 20px;
 						line-height: 20px;
 						margin-bottom: 10px;
+					}
+					.technology-group-name.showSkills {
+						opacity: 1;
+						transition: 0.8s linear all;
 					}
 					.pie-chart-group {
 						/*border: 1px solid red;*/
