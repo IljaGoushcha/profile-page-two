@@ -20,7 +20,7 @@ angular.module('profilePageTwoApp')
     vm.chartOptions = {
       segmentShowStroke : false,
       animateRotate : true,
-      percentageInnerCutout : 90
+      percentageInnerCutout : 95
     };
 
     vm.onEnterSectionOne = function() {

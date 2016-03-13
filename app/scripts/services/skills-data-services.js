@@ -133,6 +133,20 @@ angular.module('profilePageTwoApp').factory('skillsDataServices', function() {
 						{ value : 2, color : "#5BB1BD" },
         				{ value : 8, color : "#3C3A3B" }
         			]
+				}
+			]
+		},
+		{
+			'id': 5,
+			'technologyGroup': 'Misc',
+			'technologies': [
+				{
+					'name': 'HTML5/CSS',
+					'level': 9,
+					'data': [
+						{ value : 9, color : "#5BB1BD" },
+        				{ value : 1, color : "#3C3A3B" }
+        			]
 				},
 				{
 					'name': 'Bootstrap',
@@ -140,6 +154,14 @@ angular.module('profilePageTwoApp').factory('skillsDataServices', function() {
 					'data': [
 						{ value : 9, color : "#5BB1BD" },
         				{ value : 1, color : "#3C3A3B" }
+        			]
+				},
+				{
+					'name': 'SQL',
+					'level': 7,
+					'data': [
+						{ value : 7, color : "#5BB1BD" },
+        				{ value : 3, color : "#3C3A3B" }
         			]
 				}
 			]

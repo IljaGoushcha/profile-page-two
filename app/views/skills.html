@@ -4,18 +4,19 @@
 
 		<div class="right-block" width-setter width-offset="170" min-width="630">
 
-			<h1>SKILLS</h1>
+			<div class="container">
+				<h1>SKILLS</h1>
 
-			<div class="technology-group" ng-repeat="technologyGroup in mainCtrl.mySkills">
-				<div class="technology-group-name">{{technologyGroup.technologyGroup}}</div>
-				<div class="pie-chart-group" ng-repeat="skill in technologyGroup.technologies">
-					<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions"></canvas>
-					<div class="rating">{{skill.level}}<span>/</span>10</div>
-					<div class="technology-name">{{skill.name}}</div>
+				<div class="technology-group" ng-repeat="technologyGroup in mainCtrl.mySkills">
+					<div class="technology-group-name">{{technologyGroup.technologyGroup}}</div>
+					<div class="pie-chart-group" ng-repeat="skill in technologyGroup.technologies">
+						<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions"></canvas>
+						<div class="rating">{{skill.level}}<span>/</span>10</div>
+						<div class="technology-name">{{skill.name}}</div>
+					</div>
 				</div>
 			</div>
 			
-
 		</div>
 		
 
