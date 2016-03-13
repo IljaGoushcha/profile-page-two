@@ -15,5 +15,6 @@ angular
     'ngResource',
     'ngSanitize',
     'ngTouch',
-    'akreitals.panel-snap'
+    'akreitals.panel-snap',
+    'tc.chartjs'
   ]);

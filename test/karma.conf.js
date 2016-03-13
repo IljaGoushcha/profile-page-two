@@ -31,6 +31,8 @@ module.exports = function(config) {
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-panel-snap/angular-panel-snap.min.js',
+      'bower_components/Chart.js/Chart.js',
+      'bower_components/tc-angular-chartjs/dist/tc-angular-chartjs.min.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

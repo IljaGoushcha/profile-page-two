@@ -17,12 +17,34 @@ angular.module('profilePageTwoApp')
 
     vm.myExperience = experienceDataServices.getMyExperience();
 
+    vm.chartOptions = {
+      segmentShowStroke : false,
+      animateRotate : true,
+      percentageInnerCutout : 90
+    };
+
     vm.onEnterSectionOne = function() {
       console.log('onEnterSectionOne');
     };
 
     vm.onEnterSectionTwo = function() {
       console.log('onEnterSectionTwo');
+
+      vm.myData1 = [
+        { value : 5, color : "#5BB1BD" },
+        { value : 5, color : "#3C3A3B" }
+      ];
+
+      vm.myData2 = [
+        { value : 8, color : "#5BB1BD" },
+        { value : 2, color : "#3C3A3B" }
+      ];
+
+      vm.myData3 = [
+        { value : 6, color : "#5BB1BD" },
+        { value : 4, color : "#3C3A3B" }
+      ];
+
     };
 
     vm.onEnterSectionThree = function() {
@@ -56,11 +78,11 @@ angular.module('profilePageTwoApp')
 
     vm.githubAction = function() {
       $window.open('https://github.com/IljaGoushcha');
-    }
+    };
 
     vm.linkedinAction = function() {
       $window.open('https://www.linkedin.com/in/iljagoushcha');
-    }
+    };
 
   	vm.onLoad();
 
