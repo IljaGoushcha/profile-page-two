@@ -1,6 +1,25 @@
-<div class="experience-outer-div" height-width-setter>
+<div class="experience-outer-div" dimensions-setter aspect-ratio="1.89">
 
-	<div class="container">
+	<h1 ng-class="{'showEmploymentDescription': mainCtrl.showEmploymentDescriptionClass == true}">EXPERIENCE</h1>
+
+	<div class="experience-bar" ng-repeat="experience in mainCtrl.myExperience" ng-class="{'tall': mainCtrl.tallClass == true}" ng-click="mainCtrl.openExperienceModal(experience)">
+
+		<div class="employment-period-div">
+			<span>{{experience.startDate}}</span><br>
+			<img src="images/chevron-down.png" alt="chevron down"><br>
+			<span>{{experience.endDate}}</span>
+		</div>
+
+		<div class="employment-description-div rotate-align-bottom" ng-class="{'showEmploymentDescription': mainCtrl.showEmploymentDescriptionClass == true}">
+			<div class="company-name">{{experience.companyName}}</div>
+			<div class="company-location">{{experience.companyLocation}}</div>
+			<div class="blue-underline"></div>
+			<div class="position">{{experience.position}}</div>
+		</div>
+
+	</div>
+
+<!-- 	<div class="container">
 
 		<div class="row">
     		<div class="col-xs-3"></div>
@@ -12,28 +31,13 @@
 
 			<div class="bars-centered-div">
 
-				<div class="experience-bar" ng-repeat="experience in mainCtrl.myExperience" ng-class="{'tall': mainCtrl.tallClass == true}" ng-click="mainCtrl.openExperienceModal(experience)">
-
-					<div class="employment-period-div">
-						<span>{{experience.startDate}}</span><br>
-						<img src="images/chevron-down.png" alt="chevron down"><br>
-						<span>{{experience.endDate}}</span>
-					</div>
-
-					<div class="employment-description-div rotate-align-bottom" ng-class="{'showEmploymentDescription': mainCtrl.showEmploymentDescriptionClass == true}">
-						<div class="company-name">{{experience.companyName}}</div>
-						<div class="company-location">{{experience.companyLocation}}</div>
-						<div class="blue-underline"></div>
-						<div class="position">{{experience.position}}</div>
-					</div>
-
-				</div>
+				
 
 			</div>
 
 		</div>
 
-	</div>
+	</div> -->
 	
 
 	<div ng-include="'views/experience-modal.html'"></div>
