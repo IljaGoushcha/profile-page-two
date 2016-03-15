@@ -2,17 +2,21 @@
 
 angular
   .module('profilePageTwoApp')
-  .directive('pageBlock', function($window) {
+  .directive('dimensionsSetter', function($window) {
   	return {
-  		restrict: 'E',
+  		restrict: 'A',
   		link: function(scope, elem, attrs) {
-  			var el = elem[0];
+  			
+        var el = elem[0];
+        var aspectRatio = attrs.aspectRatio;
+        console.log('aspect ratio: ' + aspectRatio);
 
   			var setStyles = function() {
   				el.style.display = 'block';
-  				el.style.border = '1px solid red';
+  				// el.style.border = '1px solid blue';
   				el.style.height = getBrowserDimensions().height + 'px';
-  				el.style.width = getBrowserDimensions().width + 'px';
+  				el.style.width = parseInt(getBrowserDimensions().height*aspectRatio) + 'px';
+          el.style.marginLeft = parseInt((getBrowserDimensions().width - parseInt(getBrowserDimensions().height*aspectRatio))/2) + 'px';
   			};
 
   			var getBrowserDimensions = function() {
@@ -25,9 +29,9 @@ angular
   				};
   			};
 
-  			angular.element($window).bind('resize', function() {
-  				setStyles();
-  			});
+        angular.element($window).bind('resize', function() {
+          setStyles();
+        });
 
   			var onLoad = function() {
   				setStyles();

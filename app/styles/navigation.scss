@@ -103,12 +103,6 @@
 
 }
 
-ak-panel-group {
-  .ak-panel {
-    /*border: 1px solid red;*/
-  }
-}
-
 @media (min-width: 1000px) {
 
   .navigation-div {
@@ -117,6 +111,24 @@ ak-panel-group {
         li {
           a {
             font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+  .navigation-div {
+    ak-panel-group-menu {
+      ul {
+        margin: 30px 0 0 0;
+        li {
+          margin: 0 30px 0 30px;
+          a {
+            font-size: 14px;
           }
         }
       }

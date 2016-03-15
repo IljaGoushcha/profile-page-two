@@ -32,6 +32,7 @@
     <ak-panel-group name="myPanelGroup" class="my-panel-group" full-window="true" keyboard="true">
         <ak-panel name="ILJA GOUSHCHA" on-enter="mainCtrl.onEnterSectionOne()">
         <!-- <div ng-include="'views/introduction.html'"></div> -->
+        <div ng-include="'views/introduction.html'"></div>
         </ak-panel>
         <ak-panel name="SKILLS" on-enter="mainCtrl.onEnterSectionTwo()">
         <!-- <div ng-include="'views/skills.html'"></div> -->
@@ -81,11 +82,11 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/directives/page-block.js"></script>
         <script src="scripts/directives/height-width-setter.js"></script>
         <script src="scripts/directives/navigation-spacer.js"></script>
         <script src="scripts/directives/height-setter.js"></script>
         <script src="scripts/directives/width-setter.js"></script>
+        <script src="scripts/directives/dimensions-setter.js"></script>
         <script src="scripts/services/experience-data-services.js"></script>
         <script src="scripts/services/skills-data-services.js"></script>
         <!-- endbuild -->
