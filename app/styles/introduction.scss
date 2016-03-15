@@ -1,133 +1,157 @@
 .introduction-outer-div {
-
-	
-	min-width: 700px;
-	overflow: hidden;
-	.left-block {
-		float: left;
-		width: 50%;
-		height: 100%;
-		background-color: #D7D9D8;
-	}
-	.right-block {
-		float: right;
-		width: 50%;
-		height: 100%;
+	background-color: #D7D9D8;
+	background-size: 100%;
+	position: relative;
+	.black-div {
 		background-color: #303030;
-		.sub-block {
-			border-right: 1px solid #5BB1BD;
-			border-bottom: 1px solid #5BB1BD;
-			position: relative;
-			float:left;
-			width: 75%;
-			padding: 120px 0 0 40px;
+		height: 87.3%;
+		width: 43.3%;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		padding: 60px 0 0 50px;
+		.blue-block {
+			width: 72px;
+			height: 22px;
+			position: absolute;
+			top: 62px;
+			left: -20px;
+			background-color: #5BB1BD;
+		}
+		h1 {
+			font-size: 30px;
+			color: #D7D9D8;
+			font-weight: 700;
+			line-height: 25px;
+			margin: 0 0 10px 0;
+		}
+		.my-title {
+			margin: 25px 0 25px 0;
+			color: #5BB1BD;
+			font-size: 20px;
+			font-weight: 300;
+		}
+		.download-resume {
+			border: 1px solid #5BB1BD;
+			border-radius: 2px;
+			color: #5BB1BD;
+			background-color: #303030;
+			padding: 0;
+			font-size: 9px;
+			font-weight: 500;
+			line-height: 15px;
+			width: 140px;
+			height: 25px;
+		}
+		.download-resume:focus {
+			outline: none;
+		}
+		.download-resume:hover {
+			cursor: pointer;
+			color: #D7D9D8;
+			border: 1px solid #D7D9D8;
+		}
+	}
+	.blue-line-div {
+		height: 94.3%;
+		width: 28.8%;
+		border-right: 1px solid #57B1BE;
+		border-bottom: 1px solid #57B1BE;
+		position: absolute;
+		pointer-events: none;
+		top: 0;
+		left: 50%;
+	}
+	.portrait-div {
+		height: 82.2%;
+		width: 44.9%;
+		position: absolute;
+		left: 7.1%;
+		bottom: 0;
+		background-image: url("../images/portrait.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+	.github-icon {
+		width: 1%;
+		height: 2%;
+		position: absolute;
+		top: 83.8%;
+		left: 53.1%;
+		background-image: url("../images/github-icon.png");
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.github-icon:hover {
+		background-image: url("../images/github-icon-hover.png");
+		cursor: pointer;
+	}
+	.linkedin-icon {
+		width: 1%;
+		height: 2%;
+		position: absolute;
+		top: 83.8%;
+		left: 56.7%;
+		background-image: url("../images/linkedin-icon.png");
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.linkedin-icon:hover {
+		background-image: url("../images/linkedin-icon-hover.png");
+		cursor: pointer;
+	}
+
+
+}
+
+@media (min-width: 1000px) {
+
+	.introduction-outer-div {
+		.black-div {
+
 			.blue-block {
-				position: absolute;
-				top: 126px;
-				left: -17px;
-				width: 60px;
+				width: 73px;
 				height: 29px;
+				position: absolute;
+				top: 61px;
+				left: -20px;
 				background-color: #5BB1BD;
 			}
 			h1 {
 				font-size: 40px;
 				color: #D7D9D8;
 				font-weight: 700;
-				margin: 0;
-				line-height: 40px;
+				line-height: 30px;
+				margin: 0 0 10px 0;
 			}
-			.my-title {
-				margin: 15px 0 0 0;
-				color: #5BB1BD;
-				font-size: 20px;
-			}
-			.download-resume {
-				border: 1px solid #5BB1BD;
-				border-radius: 2px;
-				color: #5BB1BD;
-				background-color: #303030;
-				padding: 0;
-				margin-top: 20px;
-				font-size: 9px;
-				font-weight: 500;
-				line-height: 15px;
-				width: 140px;
-				height: 25px;
-			}
-			.download-resume:focus {
-				outline: none;
-			}
-			.download-resume:hover {
-				cursor: pointer;
-				color: #D7D9D8;
-				border: 1px solid #D7D9D8;
-			}
-			.github-icon {
-				width: 20px;
-				height: 20px;
-				background-image: url("../images/github-icon.png");
-				background-size: 15px;
-				background-position: center;
-				background-repeat: no-repeat;
-				position: absolute;
-				bottom: 50px;
-				left: 60px;
-			}
-			.github-icon:hover {
-				background-image: url("../images/github-icon-hover.png");
-				cursor: pointer;
-			}
-			.linkedin-icon {
-				width: 20px;
-				height: 20px;
-				background-image: url("../images/linkedin-icon.png");
-				background-size: 15px;
-				background-position: center;
-				background-repeat: no-repeat;
-				position: absolute;
-				bottom: 50px;
-				left: 120px;
-			}
-			.linkedin-icon:hover {
-				background-image: url("../images/linkedin-icon-hover.png");
-				cursor: pointer;
-			}
+
 		}
-		.spacer-block {
-			background-color: #D7D9D8;
-			height: 70px;
-		}
-	}
-	
-	.portrait {
-		position: absolute;
-		min-width: 371px;
-		top: 70px;
-		left: 0;
-		width: 53%;
-		background-image: url("../images/portrait.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: right;
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 
 	.introduction-outer-div {
+		.black-div {
 
-		.right-block {
-			.sub-block {
-				.blue-block {
-					top: 130px;
-					left: -16px;
-					height: 43px;
-				}
-				h1 {
-					font-size: 60px;
-					line-height: 60px;
-				}
+			.blue-block {
+				width: 74px;
+				height: 36px;
+				position: absolute;
+				top: 63px;
+				left: -20px;
+				background-color: #5BB1BD;
 			}
-		}	
+			h1 {
+				font-size: 50px;
+				color: #D7D9D8;
+				font-weight: 700;
+				line-height: 40px;
+				margin: 0 0 10px 0;
+			}
+
+		}
 	}
 }

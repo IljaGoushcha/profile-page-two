@@ -5,7 +5,7 @@ angular
   .directive('navigationSpacer', function($window) {
   	return {
   		restrict: 'E',
-  		link: function(scope, elem, attrs) {
+  		link: function(scope, elem) {
   			
         var el = elem[0];
         var browserHeight = 0;

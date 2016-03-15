@@ -3,14 +3,16 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-@import "introduction";
 @import "navigation";
-@import "experience";
-@import "projects";
+@import "introduction";
 @import "skills";
-@import "contact";
-@import "achievements";
+@import "experience";
 @import "experience-modal";
+@import "projects";
+@import "achievements";
+@import "contact";
+
+
 
 .browsehappy {
   margin: 0.2em 0;
@@ -33,6 +35,9 @@ body {
 		.ak-panel {
 			border: 1px solid red;
 		}
+    .ak-panel:nth-of-type(1) {
+      background-color: #D7D9D8;
+    }
 	}
   	
 }
