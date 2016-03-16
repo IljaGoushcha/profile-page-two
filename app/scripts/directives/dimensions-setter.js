@@ -22,6 +22,7 @@ angular
   			var getBrowserDimensions = function() {
   				var browserHeight = $window.innerHeight;
   				var browserWidth = $window.innerWidth;
+          // console.log('width: ' + browserWidth + ', height: ' + browserHeight);
   				
   				return {
   					'height': browserHeight,

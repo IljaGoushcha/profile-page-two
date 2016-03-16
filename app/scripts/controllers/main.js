@@ -8,9 +8,11 @@
  * Controller of the profilePageTwoApp
  */
 angular.module('profilePageTwoApp')
-  .controller('MainCtrl', ['$scope', '$window', 'experienceDataServices', 'skillsDataServices', function($scope, $window, experienceDataServices, skillsDataServices) {
+  .controller('MainCtrl', ['$scope', '$window', 'experienceDataServices', 'skillsDataServices', 'blueTriangleServices', function($scope, $window, experienceDataServices, skillsDataServices, blueTriangleServices) {
     
   	var vm = this;
+
+    vm.blueTrianglePath = blueTriangleServices.getBlueTrianglePath();
 
     vm.tallClass = false;
     vm.showEmploymentDescriptionClass = false;
@@ -76,6 +78,11 @@ angular.module('profilePageTwoApp')
       angular.element('#experienceModal').modal();
       vm.selectedExperience = myExperience;
     };
+
+    angular.element($window).bind('resize', function() {
+      console.log('resize detected');
+      vm.blueTrianglePath = '../images/blue-triangle3.svg';
+    });
 
   	vm.onLoad();
 

@@ -130,13 +130,12 @@
 
 }
 
-
-@media (min-width: 1000px) {
+@media only screen and (min-width: 768px) {
 
 	.experience-outer-div {
 		h1 {
-			font-size: 50px;
-			line-height: 40px;
+			font-size: 60px;
+			line-height: 50px;
 		}
 		.experience-bar {
 			.employment-period-div {
@@ -146,7 +145,7 @@
 			}
 			.employment-description-div {
 				width: 300px;
-				margin-left: 13%;
+				margin-left: 8%;
 				.company-name {
 					/*border: 1px solid yellow;*/
 					font-size: 40px;
@@ -176,7 +175,143 @@
 
 }
 
-@media (min-width: 1400px) {
+@media only screen and (min-width: 1024px) {
+
+	.experience-outer-div {
+		h1 {
+			font-size: 65px;
+			line-height: 55px;
+		}
+		.experience-bar {
+			.employment-period-div {
+				span {
+					font-size: 12px;
+				}
+			}
+			.employment-description-div {
+				width: 300px;
+				margin-left: 9%;
+				.company-name {
+					/*border: 1px solid yellow;*/
+					font-size: 40px;
+					color: black;
+					line-height: 40px;
+				}
+				.company-location {
+					/*border: 1px solid yellow;*/
+					font-size: 13px;
+					color: black;
+					line-height: 13px;
+				}
+				.blue-underline {
+					margin: 3px 0 0 0;
+					border-top: 1px solid #5BB1BD;
+					width: 25px;
+					height: 5px;
+				}
+				.position {
+					/*border: 1px solid yellow;*/
+					color: white;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1224px) {
+
+	.experience-outer-div {
+		h1 {
+			font-size: 70px;
+			line-height: 60px;
+		}
+		.experience-bar {
+			.employment-period-div {
+				span {
+					font-size: 12px;
+				}
+			}
+			.employment-description-div {
+				width: 300px;
+				margin-left: 10%;
+				.company-name {
+					/*border: 1px solid yellow;*/
+					font-size: 40px;
+					color: black;
+					line-height: 40px;
+				}
+				.company-location {
+					/*border: 1px solid yellow;*/
+					font-size: 13px;
+					color: black;
+					line-height: 13px;
+				}
+				.blue-underline {
+					margin: 3px 0 0 0;
+					border-top: 1px solid #5BB1BD;
+					width: 25px;
+					height: 5px;
+				}
+				.position {
+					/*border: 1px solid yellow;*/
+					color: white;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.experience-outer-div {
+		h1 {
+			font-size: 80px;
+			line-height: 70px;
+		}
+		.experience-bar {
+			.employment-period-div {
+				span {
+					font-size: 14px;
+				}
+			}
+			.employment-description-div {
+				width: 350px;
+				margin-left: 10%;
+				.company-name {
+					/*border: 1px solid yellow;*/
+					font-size: 45px;
+					font-weight: 500;
+					color: black;
+					line-height: 45px;
+				}
+				.company-location {
+					/*border: 1px solid yellow;*/
+					font-size: 13px;
+					color: black;
+					line-height: 13px;
+				}
+				.blue-underline {
+					margin: 3px 0 0 0;
+					border-top: 1px solid #5BB1BD;
+					width: 35px;
+					height: 5px;
+				}
+				.position {
+					/*border: 1px solid yellow;*/
+					color: white;
+					font-size: 15px;
+				}
+			}
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1600px) {
 
 	.experience-outer-div {
 		h1 {
@@ -208,7 +343,7 @@
 				.blue-underline {
 					margin: 3px 0 0 0;
 					border-top: 1px solid #5BB1BD;
-					width: 25px;
+					width: 35px;
 					height: 5px;
 				}
 				.position {
