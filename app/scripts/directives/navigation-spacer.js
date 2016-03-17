@@ -10,7 +10,7 @@ angular
         var el = elem[0];
         var browserHeight = 0;
         var spacerHeight = 0;
-        var offset = 220;
+        var offset = 300;
 
   			var setStyles = function() {
   				el.style.display = 'block';
