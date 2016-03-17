@@ -8,7 +8,7 @@
  * Controller of the profilePageTwoApp
  */
 angular.module('profilePageTwoApp')
-  .controller('MainCtrl', ['$scope', '$window', 'experienceDataServices', 'skillsDataServices', function($scope, $window, experienceDataServices, skillsDataServices) {
+  .controller('MainCtrl', ['$scope', '$window', 'experienceDataServices', 'skillsDataServices', 'achievementsDataServices', function($scope, $window, experienceDataServices, skillsDataServices, achievementsDataServices) {
     
   	var vm = this;
 
@@ -17,6 +17,7 @@ angular.module('profilePageTwoApp')
     vm.showSkillsClass = false;
 
     vm.myExperience = experienceDataServices.getMyExperience();
+    vm.myAchievements = achievementsDataServices.getMyAchievements();
 
     vm.chartOptions = {
       segmentShowStroke : false,

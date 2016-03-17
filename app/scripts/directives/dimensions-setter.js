@@ -13,7 +13,7 @@ angular
 
   			var setStyles = function() {
   				el.style.display = 'block';
-  				// el.style.border = '1px solid blue';
+  				el.style.border = '1px solid blue';
   				el.style.height = getBrowserDimensions().height + 'px';
   				el.style.width = parseInt(getBrowserDimensions().height*aspectRatio) + 'px';
           el.style.marginLeft = parseInt((getBrowserDimensions().width - parseInt(getBrowserDimensions().height*aspectRatio))/2) + 'px';
