@@ -43,6 +43,12 @@
           line-height: 16px;
           text-align: left;
           color: #5BB1BD;
+          .blue-triangle-one {
+            display: inline;
+          }
+          .blue-triangle-two, .blue-triangle-three, .blue-triangle-four {
+            display: none;
+          }
         }
       }
       li:nth-of-type(6) {
@@ -103,7 +109,7 @@
 
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
 
   .navigation-div {
     ak-panel-group-menu {
@@ -111,6 +117,93 @@
         li {
           a {
             font-size: 12px;
+          }
+        }
+        li:nth-of-type(1) {
+          /*border: 1px solid red;*/
+          margin: 0 40px 0 0;
+          a {
+            /*border: 1px solid red;*/
+            width: 100px;
+            height: 20px;
+            font-size: 18px;
+            line-height: 18px;
+            .blue-triangle-two {
+              display: inline;
+            }
+            .blue-triangle-one, .blue-triangle-three, .blue-triangle-four {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .navigation-div {
+    ak-panel-group-menu {
+      ul {
+        margin: 10px 0 0 0;
+        li {
+          margin: 0 30px 0 30px;
+          a {
+            font-size: 14px;
+          }
+        }
+        li:nth-of-type(1) {
+          /*border: 1px solid red;*/
+          margin: 0 45px 0 0;
+          a {
+            /*border: 1px solid red;*/
+            width: 120px;
+            height: 25px;
+            font-size: 22px;
+            line-height: 22px;
+            .blue-triangle-three {
+              display: inline;
+            }
+            .blue-triangle-one, .blue-triangle-two, .blue-triangle-four {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1224px) {
+
+  .navigation-div {
+    ak-panel-group-menu {
+      ul {
+        margin: 10px 0 0 0;
+        li {
+          margin: 0 30px 0 30px;
+          a {
+            font-size: 14px;
+          }
+        }
+        li:nth-of-type(1) {
+          /*border: 1px solid red;*/
+          margin: 0 45px 0 0;
+          a {
+            /*border: 1px solid red;*/
+            width: 120px;
+            height: 25px;
+            font-size: 22px;
+            line-height: 22px;
+            .blue-triangle-three {
+              display: inline;
+            }
+            .blue-triangle-one, .blue-triangle-two, .blue-triangle-four {
+              display: none;
+            }
           }
         }
       }
@@ -123,12 +216,65 @@
 
   .navigation-div {
     ak-panel-group-menu {
+      /*border: 1px solid red;*/
       ul {
-        margin: 30px 0 0 0;
+        margin: 10px 0 0 0;
         li {
           margin: 0 30px 0 30px;
           a {
-            font-size: 14px;
+            font-size: 16px;
+          }
+        }
+        li:nth-of-type(1) {
+          /*border: 1px solid red;*/
+          margin: 0 60px 0 0;
+          a {
+            /*border: 1px solid red;*/
+            width: 145px;
+            height: 25px;
+            font-size: 26px;
+            line-height: 26px;
+            .blue-triangle-four {
+              display: inline;
+            }
+            .blue-triangle-one, .blue-triangle-two, .blue-triangle-three {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1600px) {
+
+  .navigation-div {
+    ak-panel-group-menu {
+      ul {
+        margin: 20px 0 0 0;
+        li {
+          margin: 0 30px 0 30px;
+          a {
+            font-size: 16px;
+          }
+        }
+        li:nth-of-type(1) {
+          /*border: 1px solid red;*/
+          margin: 0 80px 0 0;
+          a {
+            /*border: 1px solid red;*/
+            width: 145px;
+            height: 25px;
+            font-size: 26px;
+            line-height: 26px;
+            .blue-triangle-four {
+              display: inline;
+            }
+            .blue-triangle-one, .blue-triangle-two, .blue-triangle-three {
+              display: none;
+            }
           }
         }
       }
