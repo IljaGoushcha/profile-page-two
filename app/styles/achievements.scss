@@ -1,6 +1,105 @@
 .achievements-outer-div {
-	background-image: url("../images/rowing-background.png");
-	background-size: cover;
-	background-position: center;
-	overflow: hidden;
+	.section-title-div {
+		/*border: 1px solid red;*/
+		height: 16.6%;
+		width: 35.9%;
+		position: absolute;
+		top: 18.3%;
+		left: 25.1%;
+		h1 {
+			color: #181818;
+			font-size: 35px;
+			font-weight: 700;
+			line-height: 35px;
+			margin: 0;
+			padding-top: 10px;
+			span {
+				color: #57B1BE;
+				}
+		}
+	}
+	.achievements-list-div {
+		/*border: 1px solid red;*/
+		position: absolute;
+		height: 40%;
+		width: 60%;
+		top: 36%;
+		left: 25.1%;
+		table {
+			table-layout: fixed;
+			width: 100%;
+			tr {
+				/*border: 1px solid red;*/
+				td:nth-of-type(1) {
+					/*border: 1px solid yellow;*/
+					width: 30px;
+					color: #57B1BE;
+					font-size: 40px;
+					line-height: 40px;
+				}
+				td:nth-of-type(2) {
+					/*border: 1px solid yellow;*/
+					width: 100%;
+					color: white;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.blue-line-div {
+		border-bottom: 2px solid #57B1BE;
+		width: 15.1%;
+		height: 34%;
+		position: absolute;
+		left: 51.3%;
+		top: 0;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+
+	.section-title-div {
+		h1 {
+			padding-top: 0;
+			font-size: 38px;
+			line-height: 38px;
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+	.section-title-div {
+		h1 {
+			padding-top: 0;
+			font-size: 45px;
+			line-height: 45px;
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1224px) {
+
+	.section-title-div {
+		h1 {
+			padding-top: 0;
+			font-size: 45px;
+			line-height: 45px;
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+
+
 }
