@@ -1,14 +1,19 @@
 <div class="achievements-outer-div" dimensions-setter aspect-ratio="1.89">
 
 	<div class="section-title-div">
-		<h1>HOBBIES <span>&#38;</span></h1>
+		<h1>HOBBIES&nbsp;<span>&#38;</span></h1>
 		<h1>ACHIEVEMENTS</h1>
 	</div>
 
 	<div class="achievements-list-div">
-		<ul>
-			<li ng-repeat="achievement in mainCtrl.myAchievements"><span>{{achievement}}</span></li>
-		</ul>
+		<table>
+			<tr ng-repeat="achievement in mainCtrl.myAchievements">
+				<td>&#8226;</td>
+				<td>{{achievement}}</td>
+			</tr>
+		</table>
 	</div>
+
+	<div class="blue-line-div"></div>
 
 </div>
