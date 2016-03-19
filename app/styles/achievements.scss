@@ -1,22 +1,35 @@
 .achievements-outer-div {
-	.section-title-div {
-		/*border: 1px solid red;*/
-		height: 16.6%;
-		width: 35.9%;
-		position: absolute;
-		top: 18.3%;
-		left: 25.1%;
-		h1 {
-			color: #181818;
-			font-size: 35px;
-			font-weight: 700;
-			line-height: 35px;
-			margin: 0;
-			padding-top: 10px;
-			span {
-				color: #57B1BE;
-				}
+	position: relative;
+
+	h1 {
+		color: #181818;
+		font-size: 50px;
+		font-weight: 700;
+		line-height: 50px;
+		margin: 0;
+		span {
+			color: #57B1BE;
 		}
+	}
+	.hobbies-title {
+		opacity: 0;
+		position: absolute;
+		left: 26%;
+		bottom: 73.5%;
+	}
+	.hobbies-title.showAchievementTitle {
+		transition: 0.6s linear all;
+		opacity: 1;
+	}
+	.achievements-title {
+		opacity: 0;
+		position: absolute;
+		left: 26%;
+		bottom: 67%;
+	}
+	.achievements-title.showAchievementTitle {
+		transition: 0.6s linear all;
+		opacity: 1;
 	}
 	.achievements-list-div {
 		/*border: 1px solid red;*/
@@ -29,7 +42,7 @@
 			table-layout: fixed;
 			width: 100%;
 			tr {
-				/*border: 1px solid red;*/
+				opacity: 0;
 				td:nth-of-type(1) {
 					/*border: 1px solid yellow;*/
 					width: 30px;
@@ -44,6 +57,30 @@
 					font-size: 14px;
 				}
 			}
+			tr:nth-of-type(1).showAchievement {
+				transition: 0.2s linear all;
+				opacity: 1;
+			}
+			tr:nth-of-type(2).showAchievement {
+				transition: 0.4s linear all;
+				opacity: 1;
+			}
+			tr:nth-of-type(3).showAchievement {
+				transition: 0.6s linear all;
+				opacity: 1;
+			}
+			tr:nth-of-type(4).showAchievement {
+				transition: 0.8s linear all;
+				opacity: 1;
+			}
+			tr:nth-of-type(5).showAchievement {
+				transition: 1s linear all;
+				opacity: 1;
+			}
+			tr:nth-of-type(6).showAchievement {
+				transition: 1.2s linear all;
+				opacity: 1;
+			}
 		}
 	}
 	.blue-line-div {
@@ -57,49 +94,117 @@
 }
 
 @media only screen and (min-width: 768px) {
-
-	.section-title-div {
+	.achievements-outer-div {
 		h1 {
-			padding-top: 0;
-			font-size: 38px;
-			line-height: 38px;
+			font-size: 55px;
+			line-height: 55px;
+		}
+		.hobbies-title {
+			bottom: 74.5%;
+		}
+		.achievements-title {
+			bottom: 67%;
 		}
 	}
-
 }
 
 @media only screen and (min-width: 1024px) {
-
-	.section-title-div {
+	.achievements-outer-div {
 		h1 {
-			padding-top: 0;
-			font-size: 45px;
-			line-height: 45px;
+			font-size: 55px;
+			line-height: 55px;
+		}
+		.hobbies-title {
+			bottom: 74.5%;
+		}
+		.achievements-title {
+			bottom: 67%;
 		}
 	}
-
 }
 
 @media only screen and (min-width: 1224px) {
-
-	.section-title-div {
+	.achievements-outer-div {
 		h1 {
-			padding-top: 0;
-			font-size: 45px;
-			line-height: 45px;
+			font-size: 55px;
+			line-height: 55px;
+		}
+		.hobbies-title {
+			bottom: 74.5%;
+		}
+		.achievements-title {
+			bottom: 67%;
+		}
+		.achievements-list-div {
+			table {
+				tr {
+					td:nth-of-type(1) {
+						font-size: 50px;
+						line-height: 40px;
+					}
+					td:nth-of-type(2) {
+						font-size: 16px;
+					}
+				}
+			}
 		}
 	}
-
 }
 
 @media only screen and (min-width: 1400px) {
-
-
-
+	.achievements-outer-div {
+		h1 {
+			font-size: 60px;
+			line-height: 60px;
+		}
+		.hobbies-title {
+			bottom: 75%;
+		}
+		.achievements-title {
+			bottom: 67%;
+		}
+		.achievements-list-div {
+			table {
+				tr {
+					td:nth-of-type(1) {
+						font-size: 55px;
+						line-height: 45px;
+					}
+					td:nth-of-type(2) {
+						font-size: 18px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (min-width: 1600px) {
-
-
-
+	.achievements-outer-div {
+		h1 {
+			font-size: 80px;
+			line-height: 80px;
+		}
+		.hobbies-title {
+			bottom: 74.5%;
+		}
+		.achievements-title {
+			bottom: 67%;
+		}
+		.achievements-list-div {
+			top: 38%;
+			table {
+				tr {
+					td:nth-of-type(1) {
+						width: 40px;
+						font-size: 60px;
+						line-height: 50px;
+					}
+					td:nth-of-type(2) {
+						font-size: 20px;
+					}
+				}
+			}
+		}
+	}
 }

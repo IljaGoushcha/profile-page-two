@@ -15,6 +15,8 @@ angular.module('profilePageTwoApp')
     vm.tallClass = false;
     vm.showEmploymentDescriptionClass = false;
     vm.showSkillsClass = false;
+    vm.showAchievementClass = false;
+    vm.showAchievementTitleClass = false;
 
     vm.myExperience = experienceDataServices.getMyExperience();
     vm.myAchievements = achievementsDataServices.getMyAchievements();
@@ -38,10 +40,10 @@ angular.module('profilePageTwoApp')
     vm.onEnterSectionThree = function() {
       console.log('onEnterSectionThree');
       vm.tallClass = true;
-      setTimeout(function(){
+      setTimeout(function() {
         vm.showEmploymentDescriptionClass = true;
         $scope.$apply();
-      }, 1000);
+      }, 800);
     };
 
     vm.onEnterSectionFour = function() {
@@ -50,6 +52,11 @@ angular.module('profilePageTwoApp')
 
     vm.onEnterSectionFive = function() {
       console.log('onEnterSectionFive');
+      vm.showAchievementClass = true;
+      setTimeout(function() {
+        vm.showAchievementTitleClass = true;
+        $scope.$apply();
+      }, 800);
     };
 
     vm.onEnterSectionSix = function() {
