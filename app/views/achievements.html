@@ -5,12 +5,12 @@
 		<h1>ACHIEVEMENTS</h1>
 	</div> -->
 
-	<h1 class="hobbies-title">HOBBIES&nbsp;<span>&#38;</span></h1>
-	<h1 class="achievements-title">ACHIEVEMENTS</h1>
+	<h1 class="hobbies-title" ng-class="{'showAchievementTitle': mainCtrl.showAchievementTitleClass == true}">HOBBIES&nbsp;<span>&#38;</span></h1>
+	<h1 class="achievements-title" ng-class="{'showAchievementTitle': mainCtrl.showAchievementTitleClass == true}">ACHIEVEMENTS</h1>
 
 	<div class="achievements-list-div">
 		<table>
-			<tr ng-repeat="achievement in mainCtrl.myAchievements">
+			<tr ng-repeat="achievement in mainCtrl.myAchievements" ng-class="{'showAchievement': mainCtrl.showAchievementClass == true}">
 				<td>&#8226;</td>
 				<td>{{achievement}}</td>
 			</tr>

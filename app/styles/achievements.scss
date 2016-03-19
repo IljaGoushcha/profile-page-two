@@ -12,14 +12,24 @@
 		}
 	}
 	.hobbies-title {
+		opacity: 0;
 		position: absolute;
 		left: 26%;
 		bottom: 73.5%;
 	}
+	.hobbies-title.showAchievementTitle {
+		transition: 0.6s linear all;
+		opacity: 1;
+	}
 	.achievements-title {
+		opacity: 0;
 		position: absolute;
 		left: 26%;
 		bottom: 67%;
+	}
+	.achievements-title.showAchievementTitle {
+		transition: 0.6s linear all;
+		opacity: 1;
 	}
 	.achievements-list-div {
 		/*border: 1px solid red;*/
@@ -32,7 +42,7 @@
 			table-layout: fixed;
 			width: 100%;
 			tr {
-				/*border: 1px solid red;*/
+				opacity: 0;
 				td:nth-of-type(1) {
 					/*border: 1px solid yellow;*/
 					width: 30px;
@@ -46,6 +56,30 @@
 					color: white;
 					font-size: 14px;
 				}
+			}
+			tr:nth-of-type(1).showAchievement {
+				transition: 0.2s linear all;
+				opacity: 1;
+			}
+			tr:nth-of-type(2).showAchievement {
+				transition: 0.4s linear all;
+				opacity: 1;
+			}
+			tr:nth-of-type(3).showAchievement {
+				transition: 0.6s linear all;
+				opacity: 1;
+			}
+			tr:nth-of-type(4).showAchievement {
+				transition: 0.8s linear all;
+				opacity: 1;
+			}
+			tr:nth-of-type(5).showAchievement {
+				transition: 1s linear all;
+				opacity: 1;
+			}
+			tr:nth-of-type(6).showAchievement {
+				transition: 1.2s linear all;
+				opacity: 1;
 			}
 		}
 	}
