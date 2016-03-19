@@ -1,102 +1,115 @@
 .skills-outer-div {
 	background-color: #D7D9D8;
-	padding: 100px 0 0 0;
-	overflow: hidden;
+	position: relative;
+
 	.inner-block {
-		width: 100%;
-		padding: 0 0 0 170px;
-		.right-block {
-			background: url("../images/skills-background.png");
-			background-size: cover;
-			background-repeat: no-repeat;
+		position: absolute;
+		bottom: 0;
+		right:0;
+		width: 78.5%;
+		height: 85.1%;
+		background: url("../images/skills-background.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		.sub-page {
 			/*border: 1px solid red;*/
+			margin: 0;
+			padding: 0;
+			width: 600px;
 			height: 100%;
-			padding: 30px 0 0 50px;
-			.container {
+			h1 {
+				color: #D7D9D8;
+				font-size: 50px;
+				margin: 0 0 30px 0;
+				font-weight: 700;
+			}
+			.technology-group {
 				/*border: 1px solid red;*/
-				margin: 0;
-				padding: 0;
-				width: 600px;
-				height: 100%;
-				h1 {
-					color: #D7D9D8;
-					font-size: 50px;
-					margin: 0 0 30px 0;
-					font-weight: 700;
+				height: 140px;
+				width: 277px;
+				display: inline-block;
+				margin: 0 35px 35px 0;
+				pointer-events: none;
+				.technology-group-name {
+					opacity: 0;
+					color: #5BB1BD;
+					font-size: 20px;
+					line-height: 20px;
+					margin-bottom: 10px;
 				}
-				.technology-group {
+				.technology-group-name.showSkills {
+					opacity: 1;
+					transition: 0.8s linear all;
+				}
+				.pie-chart-group {
 					/*border: 1px solid red;*/
-					height: 140px;
-					width: 277px;
-					display: inline-block;
-					margin: 0 35px 35px 0;
-					pointer-events: none;
-					.technology-group-name {
-						opacity: 0;
-						color: #5BB1BD;
-						font-size: 20px;
-						line-height: 20px;
-						margin-bottom: 10px;
+					width: 85px;
+					height: 110px;
+					float: left;
+					margin-right: 10px;
+					position: relative;
+					canvas {
+						width: 84px;
+						height: 84px;
 					}
-					.technology-group-name.showSkills {
-						opacity: 1;
-						transition: 0.8s linear all;
+					.rating {
+						color: #D7D9D8;
+						position: absolute;
+						bottom: 32px;
+						left: 32px;
+						font-weight: 300;
+						-webkit-transform: rotate(-90deg);
+					    -webkit-transform-origin: left top;
+					    -moz-transform: rotate(-90deg);
+					    -moz-transform-origin: left top;
+					    -ms-transform: rotate(-90deg);
+					    -ms-transform-origin: left top;
+					    -o-transform: rotate(-90deg);
+					    -o-transform-origin: left top;
+					    transform: rotate(-90deg);
+					    transform-origin: left top;
+					    span {
+					    	color: #5BB1BD;
+					    }
 					}
-					.pie-chart-group {
-						/*border: 1px solid red;*/
-						width: 85px;
-						height: 110px;
-						float: left;
-						margin-right: 10px;
-						position: relative;
-						canvas {
-							width: 84px;
-							height: 84px;
-						}
-						.rating {
-							color: #D7D9D8;
-							position: absolute;
-							bottom: 32px;
-							left: 32px;
-							font-weight: 300;
-							-webkit-transform: rotate(-90deg);
-						    -webkit-transform-origin: left top;
-						    -moz-transform: rotate(-90deg);
-						    -moz-transform-origin: left top;
-						    -ms-transform: rotate(-90deg);
-						    -ms-transform-origin: left top;
-						    -o-transform: rotate(-90deg);
-						    -o-transform-origin: left top;
-						    transform: rotate(-90deg);
-						    transform-origin: left top;
-						    span {
-						    	color: #5BB1BD;
-						    }
-						}
-						.technology-name {
-							position: absolute;
-							bottom: 0;
-							width: 100%;
-							text-align: center;
-							color: #D7D9D8;
-							font-weight: 300;
-						}
-					}
-					.pie-chart-group:last-of-type {
-						margin: 0;
+					.technology-name {
+						position: absolute;
+						bottom: 0;
+						width: 100%;
+						text-align: center;
+						color: #D7D9D8;
+						font-weight: 300;
 					}
 				}
-				.technology-group:nth-of-type(2) {
-					margin-right: 0;
-				}
-				.technology-group:nth-of-type(4) {
-					margin-right: 0;
-				}
-				.technology-group:nth-of-type(6) {
-					margin-right: 0;
+				.pie-chart-group:last-of-type {
+					margin: 0;
 				}
 			}
+			.technology-group:nth-of-type(2) {
+				margin-right: 0;
+			}
+			.technology-group:nth-of-type(4) {
+				margin-right: 0;
+			}
+			.technology-group:nth-of-type(6) {
+				margin-right: 0;
+			}
 		}
+	}
+	.explore-skillset {
+		position: absolute;
+		top: 85%;
+		left: 70%;
+		border: 1px solid #5BB1BD;
+		border-radius: 2px;
+		color: #5BB1BD;
+		background-color: #303030;
+		padding: 0;
+		font-size: 9px;
+		font-weight: 500;
+		line-height: 15px;
+		width: 140px;
+		height: 25px;
 	}
 }
 
