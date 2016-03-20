@@ -1,10 +1,11 @@
 <div class="skills-outer-div" dimensions-setter aspect-ratio="1.89">
 
-	<div class="inner-block">
+	<div class="inner-block" ng-init="subPageToShow = 'sub-page-one'">
 
-		<div class="sub-page">
-			<h1>SKILLS</h1>
+		<h1>SKILLS</h1>
 
+
+		<div class="sub-page" ng-show="subPageToShow == 'sub-page-one'">
 			<div class="technology-group" ng-repeat="technologyGroup in mainCtrl.mySkills">
 				<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">{{technologyGroup.technologyGroup}}</div>
 				<div class="pie-chart-group" ng-repeat="skill in technologyGroup.technologies">
@@ -15,7 +16,15 @@
 			</div>
 		</div>
 
+		<div class="sub-page" ng-show="subPageToShow == 'sub-page-two'"><h1>subpage 2</h1></div>
+		<div class="sub-page" ng-show="subPageToShow == 'sub-page-three'"><h1>subpage 3</h1></div>
+
 	</div>
+
 	<button type="button" class="explore-skillset" ng-click="">EXPLORE FULL SKILL SET</button>
+	<div class="blue-line-div"></div>
+	<button class="sub-page-button btn-one" ng-click="subPageToShow = 'sub-page-one'">&#45;&nbsp;1</button>
+	<button class="sub-page-button btn-two" ng-click="subPageToShow = 'sub-page-two'">&#45;&nbsp;2</button>
+	<button class="sub-page-button btn-three" ng-click="subPageToShow = 'sub-page-three'">&#45;&nbsp;3</button>
 
 </div>
