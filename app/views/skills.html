@@ -6,18 +6,35 @@
 
 
 		<div class="sub-page" ng-show="subPageToShow == page.pageNumber" ng-repeat="page in mainCtrl.mySkills">
-			<div class="technology-group" ng-repeat="technologyGroup in page.technologyGroups">
+			<!-- <div class="technology-group" ng-repeat="technologyGroup in page.technologyGroups">
 				<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">{{technologyGroup.technologyGroup}}</div>
 				<div class="pie-chart-group" ng-repeat="skill in technologyGroup.technologies">
 					<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions"></canvas>
 					<div class="rating">{{skill.level}}<span>/</span>10</div>
 					<div class="technology-name">{{skill.name}}</div>
 				</div>
-			</div>
+			</div> -->
+			<table>
+				<tr ng-repeat="row in [1,2]">
+					<td ng-repeat="column in [1,2,3]">
+						<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">
+							{{page.technologyGroups[row*column].technologyGroup}}
+						</div>
+						<div class="pie-chart-group" ng-repeat="skill in page.technologyGroups[row*column].technologies">
+							<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions"></canvas>
+							<div class="rating">{{skill.level}}<span>/</span>10</div>
+							<div class="technology-name">{{skill.name}}</div>
+						</div>
+					</td>
+				</tr>
+				<!-- <tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr> -->
+			</table>
 		</div>
-<!-- 
-		<div class="sub-page" ng-show="subPageToShow == 2"><h1>subpage 2</h1></div>
-		<div class="sub-page" ng-show="subPageToShow == 3"><h1>subpage 3</h1></div> -->
+
 
 	</div>
 
