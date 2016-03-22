@@ -33,8 +33,22 @@ angular.module('profilePageTwoApp')
 
     vm.onEnterSectionTwo = function() {
       console.log('onEnterSectionTwo');
-      vm.mySkills = skillsDataServices.getMySkills();
-      vm.showSkillsClass = true;
+      vm.changeSkillPage(1);
+    };
+
+    vm.changeSkillPage = function(myPageNumber) {
+      vm.showSkillsClass = false;
+      vm.pageNumber = myPageNumber;
+      var startIndex = 6 * (myPageNumber - 1);
+      var endIndex = 6 * myPageNumber;
+      console.log('startIndex: ' + startIndex);
+      console.log(skillsDataServices.getMySkills());
+      vm.mySkills = skillsDataServices.getMySkills().slice(startIndex, endIndex);
+      console.log(vm.mySkills);
+      setTimeout(function() {
+        vm.showSkillsClass = true;
+        $scope.$apply();
+      }, 100);
     };
 
     vm.onEnterSectionThree = function() {

@@ -166,6 +166,66 @@ angular.module('profilePageTwoApp').factory('skillsDataServices', function() {
 				}
 			]
 		}
+		// {
+		// 	'id': 6,
+		// 	'technologyGroup': 'Misc2',
+		// 	'technologies': [
+		// 		{
+		// 			'name': 'HTML5/CSS',
+		// 			'level': 9,
+		// 			'data': [
+		// 				{ value : 9, color : '#5BB1BD' },
+  //       				{ value : 1, color : '#3C3A3B' }
+  //       			]
+		// 		},
+		// 		{
+		// 			'name': 'Bootstrap',
+		// 			'level': 9,
+		// 			'data': [
+		// 				{ value : 9, color : '#5BB1BD' },
+  //       				{ value : 1, color : '#3C3A3B' }
+  //       			]
+		// 		},
+		// 		{
+		// 			'name': 'SQL',
+		// 			'level': 7,
+		// 			'data': [
+		// 				{ value : 7, color : '#5BB1BD' },
+  //       				{ value : 3, color : '#3C3A3B' }
+  //       			]
+		// 		}
+		// 	]
+		// },
+		// {
+		// 	'id': 7,
+		// 	'technologyGroup': 'Misc3',
+		// 	'technologies': [
+		// 		{
+		// 			'name': 'HTML5/CSS',
+		// 			'level': 9,
+		// 			'data': [
+		// 				{ value : 9, color : '#5BB1BD' },
+  //       				{ value : 1, color : '#3C3A3B' }
+  //       			]
+		// 		},
+		// 		{
+		// 			'name': 'Bootstrap',
+		// 			'level': 9,
+		// 			'data': [
+		// 				{ value : 9, color : '#5BB1BD' },
+  //       				{ value : 1, color : '#3C3A3B' }
+  //       			]
+		// 		},
+		// 		{
+		// 			'name': 'SQL',
+		// 			'level': 7,
+		// 			'data': [
+		// 				{ value : 7, color : '#5BB1BD' },
+  //       				{ value : 3, color : '#3C3A3B' }
+  //       			]
+		// 		}
+		// 	]
+		// }
 	];
 
 	var getMySkills = function() {
