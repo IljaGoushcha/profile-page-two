@@ -12,12 +12,7 @@ angular.module('profilePageTwoApp')
     
   	var vm = this;
 
-    vm.testData = [
-      { value : 50, color : '#F7464A' },
-      { value : 90, color : '#E2EAE9' },
-      { value : 75, color : '#D4CCC5' },
-      { value : 30, color : '#949FB1'}
-    ];
+    
     vm.chartTitle = 'oh loook what a cool title!!!!';
 
     vm.tallClass = false;
@@ -70,6 +65,19 @@ angular.module('profilePageTwoApp')
 
     vm.onEnterSectionFour = function() {
       console.log('onEnterSectionFour');
+      vm.testData = [
+        { value : 50, color : '#F7464A' },
+        { value : 90, color : '#E2EAE9' }
+      ];
+      setTimeout(function() {
+        vm.testData = [
+          { value : 50, color : '#F7464A' },
+          { value : 90, color : '#E2EAE9' },
+          { value : 75, color : '#D4CCC5' },
+          { value : 30, color : '#949FB1'}
+        ];
+        $scope.$apply();
+      }, 100);
     };
 
     vm.onEnterSectionFive = function() {
