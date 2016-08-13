@@ -46,10 +46,11 @@ angular.module('profilePageTwoApp')
       var endIndex = 6 * myPageNumber;
       console.log('startIndex: ' + startIndex);
       console.log(skillsDataServices.getMySkills());
-      vm.mySkills = skillsDataServices.getMySkills().slice(startIndex, endIndex);
+      vm.mySkills = [];
       console.log(vm.mySkills);
       setTimeout(function() {
         vm.showSkillsClass = true;
+        vm.mySkills = skillsDataServices.getMySkills().slice(startIndex, endIndex);
         $scope.$apply();
       }, 100);
     };
@@ -66,8 +67,8 @@ angular.module('profilePageTwoApp')
     vm.onEnterSectionFour = function() {
       console.log('onEnterSectionFour');
       vm.testData = [
-        { value : 50, color : '#F7464A' },
-        { value : 90, color : '#E2EAE9' }
+        // { value : 50, color : '#F7464A' },
+        // { value : 90, color : '#E2EAE9' }
       ];
       setTimeout(function() {
         vm.testData = [
@@ -77,7 +78,7 @@ angular.module('profilePageTwoApp')
           { value : 30, color : '#949FB1'}
         ];
         $scope.$apply();
-      }, 100);
+      }, 500);
     };
 
     vm.onEnterSectionFive = function() {
