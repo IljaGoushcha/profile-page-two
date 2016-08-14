@@ -141,7 +141,7 @@ angular.module('profilePageTwoApp').factory('skillsDataServices', function() {
 			'technologyGroup': 'Misc',
 			'technologies': [
 				{
-					'name': 'HTML5/CSS',
+					'name': 'HTML/CSS',
 					'level': 9,
 					'data': [
 						{ value : 9, color : '#5BB1BD' },
