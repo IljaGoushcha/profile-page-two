@@ -21,7 +21,7 @@
 							{{mainCtrl.mySkills[(row*3)+column].technologyGroup}}
 						</div>
 						<div class="pie-chart-group" ng-repeat="skill in mainCtrl.mySkills[(row*3)+column].technologies">
-							<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions"></canvas>
+							<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions" height="350"></canvas>
 							<div class="rating">{{skill.level}}<span>/</span>10</div>
 							<div class="technology-name">{{skill.name}}</div>
 						</div>

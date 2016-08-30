@@ -1,10 +1,143 @@
 .projects-outer-div {
-	.my-box {
-		width: 200px;
-		height: 200px;
-		margin-left: 300px;
-		canvas {
+	position: relative;
+	border: 1px solid red;
+
+
+	.technology-group {
+		border: 1px solid green;
+		position: absolute;
+		height: 22.9%;
+		width: 18.1%;
+		top: 20%;
+		left: 10%;
+
+		.technology-group-name {
 			border: 1px solid red;
+			width: 100%;
+			height: 35%;
+			position: relative;
+			.content {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+
+		.pie-chart-group {
+			border: 1px solid red;
+			position: relative;
+			float: left;
+			width: 33.333%;
+			height: 65%;
+			canvas {
+				border: 1px solid green;
+			}
+			.rating {
+				color: #D7D9D8;
+				position: absolute;
+				bottom: 32px;
+				left: 32px;
+				font-weight: 300;
+				-webkit-transform: rotate(-90deg);
+			    -webkit-transform-origin: left top;
+			    -moz-transform: rotate(-90deg);
+			    -moz-transform-origin: left top;
+			    -ms-transform: rotate(-90deg);
+			    -ms-transform-origin: left top;
+			    -o-transform: rotate(-90deg);
+			    -o-transform-origin: left top;
+			    transform: rotate(-90deg);
+			    transform-origin: left top;
+			    span {
+			    	color: #5BB1BD;
+			    }
+			}
+			.technology-name {
+				text-align: center;
+			}
+		}
+
+	}
+	
+}
+
+@media only screen and (min-width: 300px) {
+
+	.projects-outer-div {
+		.technology-group {
+			.technology-group-name {
+				.content {
+					font-size: 10px;
+				}
+
+			}
+			.pie-chart-group {
+				.technology-name {
+					font-size: 12px;
+				}
+			}
+
 		}
 	}
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	.projects-outer-div {
+		.technology-group {
+			.technology-group-name {
+				.content {
+					font-size: 11px;
+				}
+
+			}
+
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+	.projects-outer-div {
+		.technology-group {
+			.technology-group-name {
+				.content {
+					font-size: 13px;
+				}
+
+			}
+
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1224px) {
+
+	.projects-outer-div {
+		.technology-group {
+			.technology-group-name {
+				.content {
+					font-size: 15px;
+				}
+
+			}
+
+		}
+	}
+
+}
+
+@media only screen and (min-width: 1400px) {
+
+	
+
+}
+
+@media only screen and (min-width: 1600px) {
+
+
+
 }
