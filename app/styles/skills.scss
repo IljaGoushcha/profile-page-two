@@ -49,14 +49,10 @@
 						}
 						.pie-chart-group {
 							border: 1px solid red;
-							width: 33%;
+							width: 30%;
+							height: 68%;
 							float: left;
-							// margin-right: 10px;
 							position: relative;
-							// canvas {
-							// 	width: 80px;
-							// 	height: 60px;
-							// }
 							.rating {
 								color: #D7D9D8;
 								position: absolute;
@@ -86,80 +82,83 @@
 								font-weight: 300;
 							}
 						}
+						.pie-chart-group.with-margins {
+							margin: 0 5% 0 5%;
+						}
 					}
 				}
 			}
-			.technology-group {
-				/*border: 1px solid red;*/
-				height: 140px;
-				width: 277px;
-				display: inline-block;
-				margin: 0 35px 35px 0;
-				pointer-events: none;
-				.technology-group-name {
-					opacity: 0;
-					color: #5BB1BD;
-					font-size: 20px;
-					line-height: 20px;
-					margin-bottom: 10px;
-				}
-				.technology-group-name.showSkills {
-					opacity: 1;
-					transition: 0.8s linear all;
-				}
-				.pie-chart-group {
-					/*border: 1px solid red;*/
-					width: 85px;
-					height: 110px;
-					float: left;
-					margin-right: 10px;
-					position: relative;
-					canvas {
-						width: 84px;
-						height: 84px;
-					}
-					.rating {
-						color: #D7D9D8;
-						position: absolute;
-						bottom: 32px;
-						left: 32px;
-						font-weight: 300;
-						-webkit-transform: rotate(-90deg);
-					    -webkit-transform-origin: left top;
-					    -moz-transform: rotate(-90deg);
-					    -moz-transform-origin: left top;
-					    -ms-transform: rotate(-90deg);
-					    -ms-transform-origin: left top;
-					    -o-transform: rotate(-90deg);
-					    -o-transform-origin: left top;
-					    transform: rotate(-90deg);
-					    transform-origin: left top;
-					    span {
-					    	color: #5BB1BD;
-					    }
-					}
-					.technology-name {
-						position: absolute;
-						bottom: 0;
-						width: 100%;
-						text-align: center;
-						color: #D7D9D8;
-						font-weight: 300;
-					}
-				}
-				.pie-chart-group:last-of-type {
-					margin: 0;
-				}
-			}
-			.technology-group:nth-of-type(2) {
-				margin-right: 0;
-			}
-			.technology-group:nth-of-type(4) {
-				margin-right: 0;
-			}
-			.technology-group:nth-of-type(6) {
-				margin-right: 0;
-			}
+			// .technology-group {
+			// 	/*border: 1px solid red;*/
+			// 	height: 140px;
+			// 	width: 277px;
+			// 	display: inline-block;
+			// 	margin: 0 35px 35px 0;
+			// 	pointer-events: none;
+			// 	.technology-group-name {
+			// 		opacity: 0;
+			// 		color: #5BB1BD;
+			// 		font-size: 20px;
+			// 		line-height: 20px;
+			// 		margin-bottom: 10px;
+			// 	}
+			// 	.technology-group-name.showSkills {
+			// 		opacity: 1;
+			// 		transition: 0.8s linear all;
+			// 	}
+			// 	.pie-chart-group {
+			// 		/*border: 1px solid red;*/
+			// 		width: 85px;
+			// 		height: 110px;
+			// 		float: left;
+			// 		margin-right: 10px;
+			// 		position: relative;
+			// 		// canvas {
+			// 		// 	width: 84px;
+			// 		// 	height: 84px;
+			// 		// }
+			// 		.rating {
+			// 			color: #D7D9D8;
+			// 			position: absolute;
+			// 			bottom: 32px;
+			// 			left: 32px;
+			// 			font-weight: 300;
+			// 			-webkit-transform: rotate(-90deg);
+			// 		    -webkit-transform-origin: left top;
+			// 		    -moz-transform: rotate(-90deg);
+			// 		    -moz-transform-origin: left top;
+			// 		    -ms-transform: rotate(-90deg);
+			// 		    -ms-transform-origin: left top;
+			// 		    -o-transform: rotate(-90deg);
+			// 		    -o-transform-origin: left top;
+			// 		    transform: rotate(-90deg);
+			// 		    transform-origin: left top;
+			// 		    span {
+			// 		    	color: #5BB1BD;
+			// 		    }
+			// 		}
+			// 		.technology-name {
+			// 			position: absolute;
+			// 			bottom: 0;
+			// 			width: 100%;
+			// 			text-align: center;
+			// 			color: #D7D9D8;
+			// 			font-weight: 300;
+			// 		}
+			// 	}
+			// 	.pie-chart-group:last-of-type {
+			// 		margin: 0;
+			// 	}
+			// }
+			// .technology-group:nth-of-type(2) {
+			// 	margin-right: 0;
+			// }
+			// .technology-group:nth-of-type(4) {
+			// 	margin-right: 0;
+			// }
+			// .technology-group:nth-of-type(6) {
+			// 	margin-right: 0;
+			// }
 		}
 	}
 	.explore-skillset {
