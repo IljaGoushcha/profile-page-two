@@ -24,7 +24,24 @@
 
 		<div class="sub-page" ng-show="mainCtrl.pageNumber == 2">
 			<table>
-				<tr ng-repeat="row in [2,3]">
+				<tr ng-repeat="row in [0,1]">
+					<td ng-repeat="column in [0,1,2]">
+						<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">
+							{{mainCtrl.mySkills[(row*3)+column].technologyGroup}}
+						</div>
+					<div class="pie-chart-group" ng-class="{'with-margins': $index == 1}" ng-repeat="skill in mainCtrl.mySkills[(row*3)+column].technologies">
+							<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions" height="350"></canvas>
+							<div class="rating">{{skill.level}}<span>/</span>10</div>
+							<div class="technology-name">{{skill.name}}</div>
+						</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="sub-page" ng-show="mainCtrl.pageNumber == 3">
+			<table>
+				<tr ng-repeat="row in [0,1]">
 					<td ng-repeat="column in [0,1,2]">
 						<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">
 							{{mainCtrl.mySkills[(row*3)+column].technologyGroup}}

@@ -55,7 +55,7 @@ angular.module('profilePageTwoApp')
 
     vm.onEnterSectionTwo = function() {
       console.log('onEnterSectionTwo');
-      vm.changeSkillPage(1);
+      vm.changeSkillPage(2);
     };
 
     vm.changeSkillPage = function(myPageNumber) {
@@ -64,12 +64,13 @@ angular.module('profilePageTwoApp')
       var startIndex = 6 * (myPageNumber - 1);
       var endIndex = 6 * myPageNumber;
       console.log('startIndex: ' + startIndex);
+      console.log('endIndex: ' + endIndex);
       console.log(skillsDataServices.getMySkills());
       vm.mySkills = [];
-      console.log(vm.mySkills);
       setTimeout(function() {
         vm.showSkillsClass = true;
         vm.mySkills = skillsDataServices.getMySkills().slice(startIndex, endIndex);
+        console.log(vm.mySkills);
         $scope.$apply();
       }, 100);
     };
