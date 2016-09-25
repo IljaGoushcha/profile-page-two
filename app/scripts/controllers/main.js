@@ -55,7 +55,7 @@ angular.module('profilePageTwoApp')
 
     vm.onEnterSectionTwo = function() {
       console.log('onEnterSectionTwo');
-      vm.changeSkillPage(2);
+      vm.changeSkillPage(1);
     };
 
     vm.changeSkillPage = function(myPageNumber) {

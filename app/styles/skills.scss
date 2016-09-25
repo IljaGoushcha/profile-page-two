@@ -34,7 +34,7 @@
 					border: 1px solid red;
 					td {
 						border: 1px solid yellow;
-						width: 33.33%;
+						width: 31.33%;
 						height: 50%;
 						.technology-group-name {
 							opacity: 0;
@@ -85,6 +85,9 @@
 						.pie-chart-group.with-margins {
 							margin: 0 5% 0 5%;
 						}
+					}
+					td:nth-of-type(2), td:nth-of-type(4) {
+						width: 3%;
 					}
 				}
 			}
