@@ -31,17 +31,17 @@
 				height: 100%;
 				border: 1px solid red;
 				tr {
-					border: 1px solid red;
+					// border: 1px solid red;
 					td {
 						border: 1px solid yellow;
-						width: 31.33%;
-						height: 50%;
+						width: 26.67%;
+						// height: 50%;
 						.technology-group-name {
 							opacity: 0;
 							color: #5BB1BD;
 							font-size: 20px;
 							line-height: 20px;
-							margin-bottom: 10px;
+							margin-bottom: 1%;
 						}
 						.technology-group-name.showSkills {
 							opacity: 1;
@@ -50,14 +50,14 @@
 						.pie-chart-group {
 							border: 1px solid red;
 							width: 30%;
-							height: 68%;
+							height: 49%;
 							float: left;
 							position: relative;
 							.rating {
 								color: #D7D9D8;
 								position: absolute;
-								bottom: 32px;
-								left: 32px;
+								bottom: 18%;
+								left: 35%;
 								font-weight: 300;
 								-webkit-transform: rotate(-90deg);
 							    -webkit-transform-origin: left top;
@@ -87,7 +87,7 @@
 						}
 					}
 					td:nth-of-type(2), td:nth-of-type(4) {
-						width: 3%;
+						width: 10%;
 					}
 				}
 			}

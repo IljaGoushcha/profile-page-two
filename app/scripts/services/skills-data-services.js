@@ -7,7 +7,7 @@ angular.module('profilePageTwoApp').factory('skillsDataServices', function() {
 			'technologyGroup': 'Languages',
 			'technologies': [
 				{
-					'name': 'JavaScriptX',
+					'name': 'JavaScript',
 					'level': 8,
 					'data': [
 						{ value : 8, color : '#5BB1BD' },

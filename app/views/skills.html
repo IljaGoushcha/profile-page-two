@@ -47,11 +47,33 @@
 		<div class="sub-page" ng-show="mainCtrl.pageNumber == 2">
 			<table>
 				<tr ng-repeat="row in [0,1]">
-					<td ng-repeat="column in [0,1,2]">
+					<td>
 						<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">
-							{{mainCtrl.mySkills[(row*3)+column].technologyGroup}}
+							{{mainCtrl.mySkills[(row*3)+0].technologyGroup}}
 						</div>
-					<div class="pie-chart-group" ng-class="{'with-margins': $index == 1}" ng-repeat="skill in mainCtrl.mySkills[(row*3)+column].technologies">
+						<div class="pie-chart-group" ng-repeat="skill in mainCtrl.mySkills[(row*3)+0].technologies" ng-class="{'with-margins': $index == 1}">
+							<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions" height="350"></canvas>
+							<div class="rating">{{skill.level}}<span>/</span>10</div>
+							<div class="technology-name">{{skill.name}}</div>
+						</div>
+					</td>
+					<td></td>
+					<td>
+						<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">
+							{{mainCtrl.mySkills[(row*3)+1].technologyGroup}}
+						</div>
+						<div class="pie-chart-group" ng-repeat="skill in mainCtrl.mySkills[(row*3)+1].technologies" ng-class="{'with-margins': $index == 1}">
+							<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions" height="350"></canvas>
+							<div class="rating">{{skill.level}}<span>/</span>10</div>
+							<div class="technology-name">{{skill.name}}</div>
+						</div>
+					</td>
+					<td></td>
+					<td>
+						<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">
+							{{mainCtrl.mySkills[(row*3)+2].technologyGroup}}
+						</div>
+						<div class="pie-chart-group" ng-repeat="skill in mainCtrl.mySkills[(row*3)+2].technologies" ng-class="{'with-margins': $index == 1}">
 							<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions" height="350"></canvas>
 							<div class="rating">{{skill.level}}<span>/</span>10</div>
 							<div class="technology-name">{{skill.name}}</div>
@@ -64,11 +86,33 @@
 		<div class="sub-page" ng-show="mainCtrl.pageNumber == 3">
 			<table>
 				<tr ng-repeat="row in [0,1]">
-					<td ng-repeat="column in [0,1,2]">
+					<td>
 						<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">
-							{{mainCtrl.mySkills[(row*3)+column].technologyGroup}}
+							{{mainCtrl.mySkills[(row*3)+0].technologyGroup}}
 						</div>
-					<div class="pie-chart-group" ng-class="{'with-margins': $index == 1}" ng-repeat="skill in mainCtrl.mySkills[(row*3)+column].technologies">
+						<div class="pie-chart-group" ng-repeat="skill in mainCtrl.mySkills[(row*3)+0].technologies" ng-class="{'with-margins': $index == 1}">
+							<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions" height="350"></canvas>
+							<div class="rating">{{skill.level}}<span>/</span>10</div>
+							<div class="technology-name">{{skill.name}}</div>
+						</div>
+					</td>
+					<td></td>
+					<td>
+						<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">
+							{{mainCtrl.mySkills[(row*3)+1].technologyGroup}}
+						</div>
+						<div class="pie-chart-group" ng-repeat="skill in mainCtrl.mySkills[(row*3)+1].technologies" ng-class="{'with-margins': $index == 1}">
+							<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions" height="350"></canvas>
+							<div class="rating">{{skill.level}}<span>/</span>10</div>
+							<div class="technology-name">{{skill.name}}</div>
+						</div>
+					</td>
+					<td></td>
+					<td>
+						<div class="technology-group-name" ng-class="{'showSkills': mainCtrl.showSkillsClass == true}">
+							{{mainCtrl.mySkills[(row*3)+2].technologyGroup}}
+						</div>
+						<div class="pie-chart-group" ng-repeat="skill in mainCtrl.mySkills[(row*3)+2].technologies" ng-class="{'with-margins': $index == 1}">
 							<canvas tc-chartjs-doughnut chart-data="skill.data" chart-options="mainCtrl.chartOptions" height="350"></canvas>
 							<div class="rating">{{skill.level}}<span>/</span>10</div>
 							<div class="technology-name">{{skill.name}}</div>
